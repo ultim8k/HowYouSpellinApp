@@ -491,6 +491,8 @@
 				DEVELOPMENT_TEAM = 6JBV7F73AN;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = HowYouSpellinApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "How you spellin?";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -518,6 +520,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6JBV7F73AN;
 				INFOPLIST_FILE = HowYouSpellinApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "How you spellin?";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
