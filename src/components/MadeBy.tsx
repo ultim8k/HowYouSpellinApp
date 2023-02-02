@@ -3,13 +3,17 @@ import {TouchableOpacity, StyleSheet, Text, View, Linking} from 'react-native';
 
 const styles = StyleSheet.create({
   madeBy: {
-    paddingVertical: 7,
+    paddingVertical: 10,
     paddingHorizontal: 20,
     flexDirection: 'row',
-    justifyContent: 'flex-end',
+    justifyContent: 'center',
+    borderBottomWidth: 1,
+    borderBottomColor: '#999999',
+    marginBottom: 20,
+    marginHorizontal: 20,
   },
   text: {
-    fontSize: 12,
+    fontSize: 14,
     color: '#333333',
   },
   link: {
@@ -21,7 +25,7 @@ const styles = StyleSheet.create({
 });
 
 const handleLinkPress = (): void => {
-  Linking.openURL('https://oranger.co.uk');
+  Linking.openURL('https://kostas.rocks');
 };
 
 export const MadeBy: React.FC = () => (
@@ -32,9 +36,7 @@ export const MadeBy: React.FC = () => (
     </Text>
     <Text style={styles.text}>by </Text>
     <TouchableOpacity onPress={handleLinkPress}>
-      <Text style={StyleSheet.flatten([styles.text, styles.link])}>
-        oranger
-      </Text>
+      <Text style={StyleSheet.flatten([styles.text, styles.link])}>Kostas</Text>
     </TouchableOpacity>
   </View>
 );

@@ -1,11 +1,11 @@
 import React, {useState} from 'react';
 import {SafeAreaView, StyleSheet, Text, View} from 'react-native';
 
-import {MadeBy} from '../components/MadeBy';
 import {SpellWords} from '../components/SpellWords';
 import {InputForm} from '../components/InputForm';
 
 import {replaceCharWithSpellWord} from '../utils';
+import {AboutButton} from '../components/AboutButton';
 
 const styles = StyleSheet.create({
   app: {
@@ -29,17 +29,20 @@ const styles = StyleSheet.create({
   description: {
     textAlign: 'center',
   },
+  aboutButton: {
+    textAlign: 'right',
+  },
 });
 
-const Home: React.FC = () => {
-  const [text, setText] = useState<string>('RONCTTLA'); // Try "RONCTTLA" or "220040DL"
+export const Home: React.FC = () => {
+  const [text, setText] = useState<string>('');
   /* @ts-ignore */
   const spellWords = text.toUpperCase().split('').map(replaceCharWithSpellWord);
   const handleTextChange = (inputText: string): void => setText(inputText);
 
   return (
     <SafeAreaView style={styles.app}>
-      <MadeBy />
+      <AboutButton />
       <View style={styles.header}>
         <Text style={styles.title}>How you spellin?</Text>
         <Text style={styles.description}>
@@ -52,5 +55,3 @@ const Home: React.FC = () => {
     </SafeAreaView>
   );
 };
-
-export default Home;

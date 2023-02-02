@@ -486,9 +486,12 @@
 			baseConfigurationReference = 96CA418602C423731B1832C2 /* Pods-HowYouSpellinApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CLANG_ENABLE_MODULES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CURRENT_PROJECT_VERSION = 1.5;
 				DEVELOPMENT_TEAM = 6JBV7F73AN;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 6JBV7F73AN;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = HowYouSpellinApp/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "How you spellin?";
@@ -497,6 +500,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.5;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -505,8 +509,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "rocks.kostas.native.app.--PRODUCT-NAME-rfc1034identifier-";
 				"PRODUCT_BUNDLE_IDENTIFIER[sdk=iphoneos*]" = rocks.kostas.native.app.HowYouSpellinApp;
 				PRODUCT_NAME = HowYouSpellinApp;
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "HowYouSpellinApp-distribution";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -516,9 +525,13 @@
 			baseConfigurationReference = 595CD61FB8DD4A0F9C61ED25 /* Pods-HowYouSpellinApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CLANG_ENABLE_MODULES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6JBV7F73AN;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1.5;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 6JBV7F73AN;
 				INFOPLIST_FILE = HowYouSpellinApp/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "How you spellin?";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
@@ -526,6 +539,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.5;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -534,7 +548,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "rocks.kostas.native.app.--PRODUCT-NAME-rfc1034identifier-";
 				"PRODUCT_BUNDLE_IDENTIFIER[sdk=iphoneos*]" = rocks.kostas.native.app.HowYouSpellinApp;
 				PRODUCT_NAME = HowYouSpellinApp;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "HowYouSpellinApp-distribution";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;

@@ -15,3 +15,7 @@ npm run ios
 ```
 
 Created with ❤️ using ReactNative™️
+
+## TODO
+
+- Ship to Play Store
