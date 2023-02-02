@@ -1,0 +1,116 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.facebook.fresco",
+    "module": "nativeimagefilters",
+    "version": "2.6.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.0.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "nativeimagefilters-2.6.0.aar",
+          "url": "nativeimagefilters-2.6.0.aar",
+          "size": 53917,
+          "sha512": "844b76300bdb891bd057c89cc2e0c9f13bbd641c84de4126df75e9b9bf3d1e444ecc615438b317d6cf546d6f0954d6def10c6eeb70d8922e202c5161f068f426",
+          "sha256": "0caff35ea326f1857e1be7ba9026c92ceaaee15a970beee9c56ae8c701ee340f",
+          "sha1": "958f083814e487b0a6985c4a4504c7bceb802134",
+          "md5": "4f935e25e65751464825f1b92b75350d"
+        }
+      ]
+    },
+    {
+      "name": "releaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "com.facebook.fresco",
+          "module": "imagepipeline",
+          "version": {
+            "requires": "2.6.0"
+          }
+        },
+        {
+          "group": "com.facebook.fresco",
+          "module": "imagepipeline-native",
+          "version": {
+            "requires": "2.6.0"
+          }
+        },
+        {
+          "group": "com.facebook.fresco",
+          "module": "memory-type-ashmem",
+          "version": {
+            "requires": "2.6.0"
+          }
+        },
+        {
+          "group": "com.facebook.fresco",
+          "module": "memory-type-native",
+          "version": {
+            "requires": "2.6.0"
+          }
+        },
+        {
+          "group": "com.facebook.fresco",
+          "module": "memory-type-java",
+          "version": {
+            "requires": "2.6.0"
+          }
+        },
+        {
+          "group": "com.facebook.soloader",
+          "module": "nativeloader",
+          "version": {
+            "requires": "0.10.1"
+          }
+        },
+        {
+          "group": "com.parse.bolts",
+          "module": "bolts-tasks",
+          "version": {
+            "requires": "1.4.0"
+          }
+        },
+        {
+          "group": "com.facebook.fresco",
+          "module": "fbcore",
+          "version": {
+            "requires": "2.6.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "nativeimagefilters-2.6.0.aar",
+          "url": "nativeimagefilters-2.6.0.aar",
+          "size": 53917,
+          "sha512": "844b76300bdb891bd057c89cc2e0c9f13bbd641c84de4126df75e9b9bf3d1e444ecc615438b317d6cf546d6f0954d6def10c6eeb70d8922e202c5161f068f426",
+          "sha256": "0caff35ea326f1857e1be7ba9026c92ceaaee15a970beee9c56ae8c701ee340f",
+          "sha1": "958f083814e487b0a6985c4a4504c7bceb802134",
+          "md5": "4f935e25e65751464825f1b92b75350d"
+        }
+      ]
+    }
+  ]
+}

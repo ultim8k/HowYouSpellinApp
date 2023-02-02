@@ -1,0 +1,119 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.android.tools.build",
+    "module": "aapt2-proto",
+    "version": "4.2.2-7147631",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.7.1",
+      "buildId": "zz53gouv6nfztoi24j3d3xklai"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "com.google.protobuf",
+          "module": "protobuf-java",
+          "version": {
+            "requires": "3.10.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "aapt2-proto-4.2.2-7147631.jar",
+          "url": "aapt2-proto-4.2.2-7147631.jar",
+          "size": 673861,
+          "sha512": "01fde2536e5a70e55c1d7a17287773ded15975a54685a8ead56a2c1eb017d4a81de6149688b648360a197106537300c28da6bf299dac41520705d354b11d3fd6",
+          "sha256": "9d645a960fa55b348f9b0c35c8b9a20e2859e723bde68d08bcbfa86823f46061",
+          "sha1": "2c318a53e5166adc0eb6819fb19659893d562173",
+          "md5": "67607995f8df995bed3c5bcbe4d1c758"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "com.google.protobuf",
+          "module": "protobuf-java",
+          "version": {
+            "requires": "3.10.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "aapt2-proto-4.2.2-7147631.jar",
+          "url": "aapt2-proto-4.2.2-7147631.jar",
+          "size": 673861,
+          "sha512": "01fde2536e5a70e55c1d7a17287773ded15975a54685a8ead56a2c1eb017d4a81de6149688b648360a197106537300c28da6bf299dac41520705d354b11d3fd6",
+          "sha256": "9d645a960fa55b348f9b0c35c8b9a20e2859e723bde68d08bcbfa86823f46061",
+          "sha1": "2c318a53e5166adc0eb6819fb19659893d562173",
+          "md5": "67607995f8df995bed3c5bcbe4d1c758"
+        }
+      ]
+    },
+    {
+      "name": "javadocElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "aapt2-proto-4.2.2-7147631-javadoc.jar",
+          "url": "aapt2-proto-4.2.2-7147631-javadoc.jar",
+          "size": 261,
+          "sha512": "51fc4561c1388ee582e127947576696e0a9fdd5dd2865f4d77456d06f5345438347d24a9eed11ead77e8f545eef329931457381d664292039d39c7da06ceeafc",
+          "sha256": "9fc01af13516bdf37cacb630fa382c83a7577b6cfb43654f13310e77f6703b7d",
+          "sha1": "0c16804c52f48af308ce4090e78ff3ca25abd352",
+          "md5": "7e091bfac62f282248e32a00614fe0d5"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "aapt2-proto-4.2.2-7147631-sources.jar",
+          "url": "aapt2-proto-4.2.2-7147631-sources.jar",
+          "size": 181337,
+          "sha512": "2cea19ffc5726301f2170d6d3091d82a95bee12f669b6c2184b1a1294eb280ddf86437e018057959e92cbc3f6a5870384f5fc2355338eb18f420c42d14c6f3f0",
+          "sha256": "90ddace1beb203ab9366f4491740a47c6142d03bdbab4c8982ba1e3da94a9c8b",
+          "sha1": "5b9cb7b7e95d2820dc64b021ea12f7e65c50b0ab",
+          "md5": "37296ca42110146c66bdeec493cb9154"
+        }
+      ]
+    }
+  ]
+}

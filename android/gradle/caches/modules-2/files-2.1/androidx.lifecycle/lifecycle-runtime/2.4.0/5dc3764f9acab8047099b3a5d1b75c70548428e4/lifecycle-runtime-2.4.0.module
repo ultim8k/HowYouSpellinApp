@@ -1,0 +1,131 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "androidx.lifecycle",
+    "module": "lifecycle-runtime",
+    "version": "2.4.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.lifecycle",
+          "module": "lifecycle-common",
+          "version": {
+            "requires": "2.4.0"
+          }
+        },
+        {
+          "group": "androidx.arch.core",
+          "module": "core-common",
+          "version": {
+            "requires": "2.1.0"
+          }
+        },
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.1.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "lifecycle-runtime-2.4.0.aar",
+          "url": "lifecycle-runtime-2.4.0.aar",
+          "size": 11483,
+          "sha512": "a813c3aebc1da91b031ab8ceae9ce46abfe857517681b535813e5a1040cd0b5ee5749177b0977da167826df87e83094f34ace0d41e1dd3df81ec00855ac98109",
+          "sha256": "fba2ea76a2c0a8d2804e611367d9703c5ab2ecaafebca4932b00fd672c593588",
+          "sha1": "26e91454181447d6230bc59788bf6abb62f56373",
+          "md5": "b16ac7a982b64ac0c33d34e75c7aefee"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.arch.core",
+          "module": "core-runtime",
+          "version": {
+            "requires": "2.1.0"
+          }
+        },
+        {
+          "group": "androidx.lifecycle",
+          "module": "lifecycle-common",
+          "version": {
+            "requires": "2.4.0"
+          }
+        },
+        {
+          "group": "androidx.arch.core",
+          "module": "core-common",
+          "version": {
+            "requires": "2.1.0"
+          }
+        },
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.1.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "lifecycle-runtime-2.4.0.aar",
+          "url": "lifecycle-runtime-2.4.0.aar",
+          "size": 11483,
+          "sha512": "a813c3aebc1da91b031ab8ceae9ce46abfe857517681b535813e5a1040cd0b5ee5749177b0977da167826df87e83094f34ace0d41e1dd3df81ec00855ac98109",
+          "sha256": "fba2ea76a2c0a8d2804e611367d9703c5ab2ecaafebca4932b00fd672c593588",
+          "sha1": "26e91454181447d6230bc59788bf6abb62f56373",
+          "md5": "b16ac7a982b64ac0c33d34e75c7aefee"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "lifecycle-runtime-2.4.0-sources.jar",
+          "url": "lifecycle-runtime-2.4.0-sources.jar",
+          "size": 8927,
+          "sha512": "3a9f03beaffff0b273188c91a18f234962052eed4257f5b18b5098d09e2ed9799e3870b5b8cc63eeb429f03ef294f3109365c794bb84b11742048d1a1a0a4288",
+          "sha256": "a1757f478939a9ae47e3a005f5c3ce051e50859d54478e3b931fdb06738269a9",
+          "sha1": "ae7040cf314de81d20ac69f28f5ab6c9a2c0d1ab",
+          "md5": "a34ad95ef12973e07a73efde45a2504e"
+        }
+      ]
+    }
+  ]
+}

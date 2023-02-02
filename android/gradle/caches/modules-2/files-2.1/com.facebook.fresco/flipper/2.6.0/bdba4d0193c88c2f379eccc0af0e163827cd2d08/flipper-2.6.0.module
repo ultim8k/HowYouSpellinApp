@@ -1,0 +1,102 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.facebook.fresco",
+    "module": "flipper",
+    "version": "2.6.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.0.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "flipper-2.6.0.aar",
+          "url": "flipper-2.6.0.aar",
+          "size": 10173,
+          "sha512": "27f2840c1d22b1c4f6a37a30d2264b12236b8524849fa8678deb0d9b6322379bccad52c66e820060f2bae456078d47085bbfa5b5002b6935c060b8d77da8abbc",
+          "sha256": "5d74227f8e50aef3336cb633aeab872841557765328a9d28d106f5a31bd1e424",
+          "sha1": "e6232ccb3aad73a447810b6d0e9010577f810360",
+          "md5": "ca02c34bedd342567d734dbcc1ed975b"
+        }
+      ]
+    },
+    {
+      "name": "releaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "com.facebook.fresco",
+          "module": "fresco",
+          "version": {
+            "requires": "2.6.0"
+          }
+        },
+        {
+          "group": "com.facebook.fresco",
+          "module": "imagepipeline",
+          "version": {
+            "requires": "2.6.0"
+          }
+        },
+        {
+          "group": "com.facebook.fresco",
+          "module": "imagepipeline-native",
+          "version": {
+            "requires": "2.6.0"
+          }
+        },
+        {
+          "group": "com.facebook.fresco",
+          "module": "memory-type-ashmem",
+          "version": {
+            "requires": "2.6.0"
+          }
+        },
+        {
+          "group": "com.facebook.fresco",
+          "module": "memory-type-native",
+          "version": {
+            "requires": "2.6.0"
+          }
+        },
+        {
+          "group": "com.facebook.fresco",
+          "module": "memory-type-java",
+          "version": {
+            "requires": "2.6.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "flipper-2.6.0.aar",
+          "url": "flipper-2.6.0.aar",
+          "size": 10173,
+          "sha512": "27f2840c1d22b1c4f6a37a30d2264b12236b8524849fa8678deb0d9b6322379bccad52c66e820060f2bae456078d47085bbfa5b5002b6935c060b8d77da8abbc",
+          "sha256": "5d74227f8e50aef3336cb633aeab872841557765328a9d28d106f5a31bd1e424",
+          "sha1": "e6232ccb3aad73a447810b6d0e9010577f810360",
+          "md5": "ca02c34bedd342567d734dbcc1ed975b"
+        }
+      ]
+    }
+  ]
+}

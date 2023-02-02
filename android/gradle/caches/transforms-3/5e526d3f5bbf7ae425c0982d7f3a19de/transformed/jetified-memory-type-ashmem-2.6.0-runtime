@@ -1,0 +1,3 @@
+com.facebook.fresco.memorytypes.ashmem.BuildConfig
+com.facebook.imagepipeline.memory.AshmemMemoryChunk
+com.facebook.imagepipeline.memory.AshmemMemoryChunkPool

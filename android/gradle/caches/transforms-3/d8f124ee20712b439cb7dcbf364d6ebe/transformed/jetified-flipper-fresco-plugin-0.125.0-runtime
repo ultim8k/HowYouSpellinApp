@@ -1,0 +1,15 @@
+com.facebook.flipper.plugins.fresco.BuildConfig
+com.facebook.flipper.plugins.fresco.FrescoFlipperDebugPrefHelper
+com.facebook.flipper.plugins.fresco.FrescoFlipperDebugPrefHelper$Listener
+com.facebook.flipper.plugins.fresco.FrescoFlipperPlugin
+com.facebook.flipper.plugins.fresco.FrescoFlipperPlugin$1
+com.facebook.flipper.plugins.fresco.FrescoFlipperPlugin$2
+com.facebook.flipper.plugins.fresco.FrescoFlipperPlugin$3
+com.facebook.flipper.plugins.fresco.FrescoFlipperPlugin$4
+com.facebook.flipper.plugins.fresco.FrescoFlipperPlugin$4$1
+com.facebook.flipper.plugins.fresco.FrescoFlipperPlugin$5
+com.facebook.flipper.plugins.fresco.FrescoFlipperPlugin$6
+com.facebook.flipper.plugins.fresco.FrescoFlipperPlugin$7
+com.facebook.flipper.plugins.fresco.FrescoFlipperPlugin$8
+com.facebook.flipper.plugins.fresco.FrescoFlipperRequestListener
+com.facebook.flipper.plugins.fresco.objecthelper.FlipperObjectHelper

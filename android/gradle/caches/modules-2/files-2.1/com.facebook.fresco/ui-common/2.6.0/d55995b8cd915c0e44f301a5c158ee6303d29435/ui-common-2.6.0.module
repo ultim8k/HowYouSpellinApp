@@ -1,0 +1,67 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.facebook.fresco",
+    "module": "ui-common",
+    "version": "2.6.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.0.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "ui-common-2.6.0.aar",
+          "url": "ui-common-2.6.0.aar",
+          "size": 8790,
+          "sha512": "f229aab32bc5140fbb5b115aaa4c3288e97677f11e2cae5c2f9d77e7f32478fe052060f7ffe6da09508e4d33a808f109c8015f84bd8b645a6623e7f95342c54a",
+          "sha256": "5dfedfb8f504be706f375bf554a36f66cca6977652afffc9b3a7b0c103286ddc",
+          "sha1": "51edb9eb5608f058f33f0b5dfcba0372f5c20a3b",
+          "md5": "cdeb0fc4201db1a4d9009a9e45640682"
+        }
+      ]
+    },
+    {
+      "name": "releaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "com.facebook.fresco",
+          "module": "fbcore",
+          "version": {
+            "requires": "2.6.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "ui-common-2.6.0.aar",
+          "url": "ui-common-2.6.0.aar",
+          "size": 8790,
+          "sha512": "f229aab32bc5140fbb5b115aaa4c3288e97677f11e2cae5c2f9d77e7f32478fe052060f7ffe6da09508e4d33a808f109c8015f84bd8b645a6623e7f95342c54a",
+          "sha256": "5dfedfb8f504be706f375bf554a36f66cca6977652afffc9b3a7b0c103286ddc",
+          "sha1": "51edb9eb5608f058f33f0b5dfcba0372f5c20a3b",
+          "md5": "cdeb0fc4201db1a4d9009a9e45640682"
+        }
+      ]
+    }
+  ]
+}

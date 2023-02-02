@@ -1,0 +1,104 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.facebook.fresco",
+    "module": "imagepipeline",
+    "version": "2.5.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.0.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "com.facebook.fresco",
+          "module": "imagepipeline-base",
+          "version": {
+            "requires": "2.5.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "imagepipeline-2.5.0.aar",
+          "url": "imagepipeline-2.5.0.aar",
+          "size": 449629,
+          "sha512": "647aff58941950ec866a3e7266682dfbcf2828b514e700fcf258afaf01a628d666e6eb2108b22bc236584b01105e5c7a08b3fba24640388ae30cdd250e84f996",
+          "sha256": "a2d7092c9bc2150159ce7be797edf6aac0a6913ce5ab8b0249216ffd46b75327",
+          "sha1": "dd62dd1607ade4532c1240f137ac3c2d7920c134",
+          "md5": "259bdc31a9edd26100e181511713e7a2"
+        }
+      ]
+    },
+    {
+      "name": "releaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "com.facebook.soloader",
+          "module": "nativeloader",
+          "version": {
+            "requires": "0.10.1"
+          }
+        },
+        {
+          "group": "com.facebook.soloader",
+          "module": "annotation",
+          "version": {
+            "requires": "0.10.1"
+          }
+        },
+        {
+          "group": "com.parse.bolts",
+          "module": "bolts-tasks",
+          "version": {
+            "requires": "1.4.0"
+          }
+        },
+        {
+          "group": "com.facebook.fresco",
+          "module": "fbcore",
+          "version": {
+            "requires": "2.5.0"
+          }
+        },
+        {
+          "group": "com.facebook.fresco",
+          "module": "imagepipeline-base",
+          "version": {
+            "requires": "2.5.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "imagepipeline-2.5.0.aar",
+          "url": "imagepipeline-2.5.0.aar",
+          "size": 449629,
+          "sha512": "647aff58941950ec866a3e7266682dfbcf2828b514e700fcf258afaf01a628d666e6eb2108b22bc236584b01105e5c7a08b3fba24640388ae30cdd250e84f996",
+          "sha256": "a2d7092c9bc2150159ce7be797edf6aac0a6913ce5ab8b0249216ffd46b75327",
+          "sha1": "dd62dd1607ade4532c1240f137ac3c2d7920c134",
+          "md5": "259bdc31a9edd26100e181511713e7a2"
+        }
+      ]
+    }
+  ]
+}

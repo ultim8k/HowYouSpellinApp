@@ -1,0 +1,74 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.facebook.fresco",
+    "module": "memory-type-ashmem",
+    "version": "2.6.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.0.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "memory-type-ashmem-2.6.0.aar",
+          "url": "memory-type-ashmem-2.6.0.aar",
+          "size": 5878,
+          "sha512": "03f9ef7f91d55382835bc03090c832a9d75b0b07d8e75d8d4530846e5a394feb5308561cbeb28b7cdfee0f9f0b2e964c1a477e8d7551ff6141845494ed0d0e84",
+          "sha256": "c2b5c5e0d1eafd676fd6b5c78d47bfdf9960305e79b587a97259e3c9671d36e6",
+          "sha1": "42b2656520923f5ec1c48363b4869e8064de430b",
+          "md5": "b7da4c1cb705b1bffb5dd7d44c5c3922"
+        }
+      ]
+    },
+    {
+      "name": "releaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "com.facebook.fresco",
+          "module": "fbcore",
+          "version": {
+            "requires": "2.6.0"
+          }
+        },
+        {
+          "group": "com.facebook.fresco",
+          "module": "imagepipeline",
+          "version": {
+            "requires": "2.6.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "memory-type-ashmem-2.6.0.aar",
+          "url": "memory-type-ashmem-2.6.0.aar",
+          "size": 5878,
+          "sha512": "03f9ef7f91d55382835bc03090c832a9d75b0b07d8e75d8d4530846e5a394feb5308561cbeb28b7cdfee0f9f0b2e964c1a477e8d7551ff6141845494ed0d0e84",
+          "sha256": "c2b5c5e0d1eafd676fd6b5c78d47bfdf9960305e79b587a97259e3c9671d36e6",
+          "sha1": "42b2656520923f5ec1c48363b4869e8064de430b",
+          "md5": "b7da4c1cb705b1bffb5dd7d44c5c3922"
+        }
+      ]
+    }
+  ]
+}

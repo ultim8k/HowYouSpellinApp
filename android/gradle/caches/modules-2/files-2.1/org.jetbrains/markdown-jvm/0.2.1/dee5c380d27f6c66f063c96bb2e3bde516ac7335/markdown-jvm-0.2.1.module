@@ -1,0 +1,103 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../markdown/0.2.1/markdown-0.2.1.module",
+    "group": "org.jetbrains",
+    "module": "markdown",
+    "version": "0.2.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.7.1",
+      "buildId": "dbegonp2infohhz2xfctdaiifi"
+    }
+  },
+  "variants": [
+    {
+      "name": "jvm-api",
+      "attributes": {
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "1.4.10"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-common",
+          "version": {
+            "requires": "1.4.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "markdown-jvm-0.2.1.jar",
+          "url": "markdown-jvm-0.2.1.jar",
+          "size": 504886,
+          "sha512": "59ab77e972cf9377ef885d53fc044da48acbdd09e3cfea2a6732dc6739dc35134ecb3b572006fbef61ab4ff8bfb5bd2ee0e9faf656b7f6c9c726a159fb366d76",
+          "sha256": "a216200415434f53eff0fb1b3906f4c865f6a1f6d9cdcea158e30b8264ebd7e8",
+          "sha1": "7e8952fa13f7a45739c9a5f576609a87bdcac588",
+          "md5": "1df10fc5dd705b8797fb75c2fb4ad8c6"
+        }
+      ]
+    },
+    {
+      "name": "jvm-runtime",
+      "attributes": {
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "1.4.10"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-common",
+          "version": {
+            "requires": "1.4.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "markdown-jvm-0.2.1.jar",
+          "url": "markdown-jvm-0.2.1.jar",
+          "size": 504886,
+          "sha512": "59ab77e972cf9377ef885d53fc044da48acbdd09e3cfea2a6732dc6739dc35134ecb3b572006fbef61ab4ff8bfb5bd2ee0e9faf656b7f6c9c726a159fb366d76",
+          "sha256": "a216200415434f53eff0fb1b3906f4c865f6a1f6d9cdcea158e30b8264ebd7e8",
+          "sha1": "7e8952fa13f7a45739c9a5f576609a87bdcac588",
+          "md5": "1df10fc5dd705b8797fb75c2fb4ad8c6"
+        }
+      ]
+    },
+    {
+      "name": "metadata-api",
+      "attributes": {
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.platform.type": "common"
+      },
+      "available-at": {
+        "url": "../../markdown-metadata/0.2.1/markdown-metadata-0.2.1.module",
+        "group": "org.jetbrains",
+        "module": "markdown-metadata",
+        "version": "0.2.1"
+      }
+    }
+  ]
+}

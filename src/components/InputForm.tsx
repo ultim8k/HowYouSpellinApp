@@ -9,10 +9,14 @@ const styles = StyleSheet.create({
     marginBottom: 15,
     backgroundColor: '#ffffff',
   },
-  checkboxLine: {
+  switchBoxLine: {
     marginBottom: 20,
     flexDirection: 'row',
     justifyContent: 'space-between',
+    alignItems: 'center',
+  },
+  switchBox: {
+    transform: [{scaleX: 0.7}, {scaleY: 0.7}],
   },
   formWrapper: {
     padding: 20,
@@ -37,10 +41,15 @@ export const InputForm: React.FC<InputFormProps> = ({
         placeholder="Type some text"
         defaultValue={text}
         onChangeText={handleTextChange}
+        autoFocus={true}
       />
-      <View style={styles.checkboxLine}>
-        <Text>Display Inline?</Text>
-        <Switch onValueChange={changeListOrientation} value={isHorizontal} />
+      <View style={styles.switchBoxLine}>
+        <Text>Display words vertically?</Text>
+        <Switch
+          style={styles.switchBox}
+          onValueChange={changeListOrientation}
+          value={!isHorizontal}
+        />
       </View>
     </View>
   );

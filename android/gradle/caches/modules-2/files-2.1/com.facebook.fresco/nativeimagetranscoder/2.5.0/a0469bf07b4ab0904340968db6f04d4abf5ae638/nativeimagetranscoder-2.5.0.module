@@ -1,0 +1,88 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.facebook.fresco",
+    "module": "nativeimagetranscoder",
+    "version": "2.5.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.0.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "nativeimagetranscoder-2.5.0.aar",
+          "url": "nativeimagetranscoder-2.5.0.aar",
+          "size": 701301,
+          "sha512": "96bb6a67427c479f1a6e968cc60ffcd470a7ba3ad4edc531d0de51e9b603ec2bbb1d858016c943a854f7ad5720fe61aa557616b44fd53af821868401434f5132",
+          "sha256": "b51948ec2aae73abea37cdfe85461ff2c4b3d25ca22b13ae8a562b8326c42552",
+          "sha1": "7db353c68b41e2ad502a959c554387d59e75eb75",
+          "md5": "a0a7244552e8c4ab05dd19d8d48a7116"
+        }
+      ]
+    },
+    {
+      "name": "releaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "com.facebook.fresco",
+          "module": "imagepipeline-base",
+          "version": {
+            "requires": "2.5.0"
+          }
+        },
+        {
+          "group": "com.facebook.soloader",
+          "module": "nativeloader",
+          "version": {
+            "requires": "0.10.1"
+          }
+        },
+        {
+          "group": "com.parse.bolts",
+          "module": "bolts-tasks",
+          "version": {
+            "requires": "1.4.0"
+          }
+        },
+        {
+          "group": "com.facebook.fresco",
+          "module": "fbcore",
+          "version": {
+            "requires": "2.5.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "nativeimagetranscoder-2.5.0.aar",
+          "url": "nativeimagetranscoder-2.5.0.aar",
+          "size": 701301,
+          "sha512": "96bb6a67427c479f1a6e968cc60ffcd470a7ba3ad4edc531d0de51e9b603ec2bbb1d858016c943a854f7ad5720fe61aa557616b44fd53af821868401434f5132",
+          "sha256": "b51948ec2aae73abea37cdfe85461ff2c4b3d25ca22b13ae8a562b8326c42552",
+          "sha1": "7db353c68b41e2ad502a959c554387d59e75eb75",
+          "md5": "a0a7244552e8c4ab05dd19d8d48a7116"
+        }
+      ]
+    }
+  ]
+}

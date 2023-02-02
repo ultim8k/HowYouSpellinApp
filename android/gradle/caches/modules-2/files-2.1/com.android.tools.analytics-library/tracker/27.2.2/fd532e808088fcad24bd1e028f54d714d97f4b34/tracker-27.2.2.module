@@ -1,0 +1,207 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.android.tools.analytics-library",
+    "module": "tracker",
+    "version": "27.2.2",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.7.1",
+      "buildId": "zz53gouv6nfztoi24j3d3xklai"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.localToProject": "public",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "com.android.tools",
+          "module": "annotations",
+          "version": {
+            "requires": "27.2.2"
+          }
+        },
+        {
+          "group": "com.android.tools",
+          "module": "common",
+          "version": {
+            "requires": "27.2.2"
+          }
+        },
+        {
+          "group": "com.android.tools.analytics-library",
+          "module": "protos",
+          "version": {
+            "requires": "27.2.2"
+          }
+        },
+        {
+          "group": "com.android.tools.analytics-library",
+          "module": "shared",
+          "version": {
+            "requires": "27.2.2"
+          }
+        },
+        {
+          "group": "com.google.protobuf",
+          "module": "protobuf-java",
+          "version": {
+            "requires": "3.10.0"
+          }
+        },
+        {
+          "group": "com.google.guava",
+          "module": "guava",
+          "version": {
+            "requires": "28.1-jre"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.4.31"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "tracker-27.2.2.jar",
+          "url": "tracker-27.2.2.jar",
+          "size": 38725,
+          "sha512": "94b325f0d7e0341ae9cadf1928ae2c3e34bc00cb46a5bc1e441df5cc2b3ace8b36992d809396442fa2d84151335d81514d6f968fefd060ffec643315f38bb089",
+          "sha256": "62489d84192dc06219664945c43201654ff85c3b715f46550751512a880d0e39",
+          "sha1": "d75809cf650ab19f810f9f7b09559490abbeccca",
+          "md5": "868052d3fe1811b2998607d6644b1a4b"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.localToProject": "public",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "com.android.tools",
+          "module": "annotations",
+          "version": {
+            "requires": "27.2.2"
+          }
+        },
+        {
+          "group": "com.android.tools",
+          "module": "common",
+          "version": {
+            "requires": "27.2.2"
+          }
+        },
+        {
+          "group": "com.android.tools.analytics-library",
+          "module": "protos",
+          "version": {
+            "requires": "27.2.2"
+          }
+        },
+        {
+          "group": "com.android.tools.analytics-library",
+          "module": "shared",
+          "version": {
+            "requires": "27.2.2"
+          }
+        },
+        {
+          "group": "com.google.protobuf",
+          "module": "protobuf-java",
+          "version": {
+            "requires": "3.10.0"
+          }
+        },
+        {
+          "group": "com.google.guava",
+          "module": "guava",
+          "version": {
+            "requires": "28.1-jre"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.4.31"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "tracker-27.2.2.jar",
+          "url": "tracker-27.2.2.jar",
+          "size": 38725,
+          "sha512": "94b325f0d7e0341ae9cadf1928ae2c3e34bc00cb46a5bc1e441df5cc2b3ace8b36992d809396442fa2d84151335d81514d6f968fefd060ffec643315f38bb089",
+          "sha256": "62489d84192dc06219664945c43201654ff85c3b715f46550751512a880d0e39",
+          "sha1": "d75809cf650ab19f810f9f7b09559490abbeccca",
+          "md5": "868052d3fe1811b2998607d6644b1a4b"
+        }
+      ]
+    },
+    {
+      "name": "javadocElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "tracker-27.2.2-javadoc.jar",
+          "url": "tracker-27.2.2-javadoc.jar",
+          "size": 26075,
+          "sha512": "cd40fc9306f928296f820fc0f2c8799720932adf618800c91b8ca6ad0bf68a3cd964b1ac0090247d660bc6a51cf065c184b261e68df000f9189c14120118007a",
+          "sha256": "15dda75c38ef58666acbc792d11598d0ecf211e8108d2b8d94658f94ccbac68e",
+          "sha1": "f337b6a17c7e4ccc6c86a782d40c1a33572acf03",
+          "md5": "9d32ff5c6ab52a6ff24d912975f34aef"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "tracker-27.2.2-sources.jar",
+          "url": "tracker-27.2.2-sources.jar",
+          "size": 18097,
+          "sha512": "698e200213aaf12ffca8a229db75c0e9db9b3c29eccfd9213f9a50250ae10cee76abc0d18babfcccfeadc0f71e45ef44c5eb5fe914df39c49d81768aaaad616b",
+          "sha256": "ccb51c8967c42b72ef9a8c4fb807540227f90b443752199230164e8fe48546d1",
+          "sha1": "b76ea032c7e34dd563ab64c20bc9358ea0d27de2",
+          "md5": "594e63394a21f967b923f903ecc73dd0"
+        }
+      ]
+    }
+  ]
+}

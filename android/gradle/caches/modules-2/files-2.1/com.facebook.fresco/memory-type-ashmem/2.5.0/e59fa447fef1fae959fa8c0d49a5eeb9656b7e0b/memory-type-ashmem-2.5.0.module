@@ -1,0 +1,74 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.facebook.fresco",
+    "module": "memory-type-ashmem",
+    "version": "2.5.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.0.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "memory-type-ashmem-2.5.0.aar",
+          "url": "memory-type-ashmem-2.5.0.aar",
+          "size": 5778,
+          "sha512": "08490d0ba4d38b224584276c16787578f5a994571913eccb8e175139680eb717e7318cdd9f1d7343dbc30f293a5afea4f57fcfa53dc65751b78cc9357e3bce73",
+          "sha256": "ed80c42018c4fd319218bc2396e38b27337b541c45c1efeaabceb6c2ace1f7e8",
+          "sha1": "b43b53aca89569fd2e8e964b71dc7afbf62204e8",
+          "md5": "e9239950b2d55e31cca1cce0cb8c857b"
+        }
+      ]
+    },
+    {
+      "name": "releaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "com.facebook.fresco",
+          "module": "fbcore",
+          "version": {
+            "requires": "2.5.0"
+          }
+        },
+        {
+          "group": "com.facebook.fresco",
+          "module": "imagepipeline",
+          "version": {
+            "requires": "2.5.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "memory-type-ashmem-2.5.0.aar",
+          "url": "memory-type-ashmem-2.5.0.aar",
+          "size": 5778,
+          "sha512": "08490d0ba4d38b224584276c16787578f5a994571913eccb8e175139680eb717e7318cdd9f1d7343dbc30f293a5afea4f57fcfa53dc65751b78cc9357e3bce73",
+          "sha256": "ed80c42018c4fd319218bc2396e38b27337b541c45c1efeaabceb6c2ace1f7e8",
+          "sha1": "b43b53aca89569fd2e8e964b71dc7afbf62204e8",
+          "md5": "e9239950b2d55e31cca1cce0cb8c857b"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+com.facebook.imagepipeline.nativecode.Bitmaps
+com.facebook.imagepipeline.nativecode.BuildConfig
+com.facebook.imagepipeline.nativecode.DalvikPurgeableDecoder
+com.facebook.imagepipeline.nativecode.DalvikPurgeableDecoder$OreoUtils
+com.facebook.imagepipeline.nativecode.ImagePipelineNativeLoader
+com.facebook.imagepipeline.platform.GingerbreadPurgeableDecoder
+com.facebook.imagepipeline.platform.KitKatPurgeableDecoder

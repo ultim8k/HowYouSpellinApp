@@ -1,0 +1,132 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "org.jetbrains",
+    "module": "markdown",
+    "version": "0.2.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.7.1",
+      "buildId": "dbegonp2infohhz2xfctdaiifi"
+    }
+  },
+  "variants": [
+    {
+      "name": "js-api",
+      "attributes": {
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.js.compiler": "legacy",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "available-at": {
+        "url": "../../markdown-js/0.2.1/markdown-js-0.2.1.module",
+        "group": "org.jetbrains",
+        "module": "markdown-js",
+        "version": "0.2.1"
+      }
+    },
+    {
+      "name": "js-runtime",
+      "attributes": {
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.js.compiler": "legacy",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "available-at": {
+        "url": "../../markdown-js/0.2.1/markdown-js-0.2.1.module",
+        "group": "org.jetbrains",
+        "module": "markdown-js",
+        "version": "0.2.1"
+      }
+    },
+    {
+      "name": "jvm-api",
+      "attributes": {
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "../../markdown-jvm/0.2.1/markdown-jvm-0.2.1.module",
+        "group": "org.jetbrains",
+        "module": "markdown-jvm",
+        "version": "0.2.1"
+      }
+    },
+    {
+      "name": "jvm-runtime",
+      "attributes": {
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "../../markdown-jvm/0.2.1/markdown-jvm-0.2.1.module",
+        "group": "org.jetbrains",
+        "module": "markdown-jvm",
+        "version": "0.2.1"
+      }
+    },
+    {
+      "name": "linuxX64-api",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "linux_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../markdown-linuxx64/0.2.1/markdown-linuxx64-0.2.1.module",
+        "group": "org.jetbrains",
+        "module": "markdown-linuxx64",
+        "version": "0.2.1"
+      }
+    },
+    {
+      "name": "macosX64-api",
+      "attributes": {
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "macos_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../markdown-macosx64/0.2.1/markdown-macosx64-0.2.1.module",
+        "group": "org.jetbrains",
+        "module": "markdown-macosx64",
+        "version": "0.2.1"
+      }
+    },
+    {
+      "name": "metadata-api",
+      "attributes": {
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.platform.type": "common"
+      },
+      "available-at": {
+        "url": "../../markdown-metadata/0.2.1/markdown-metadata-0.2.1.module",
+        "group": "org.jetbrains",
+        "module": "markdown-metadata",
+        "version": "0.2.1"
+      }
+    },
+    {
+      "name": "mingwX64-api",
+      "attributes": {
+        "artifactType": "org.jetbrains.kotlin.klib",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "mingw_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../markdown-mingwx64/0.2.1/markdown-mingwx64-0.2.1.module",
+        "group": "org.jetbrains",
+        "module": "markdown-mingwx64",
+        "version": "0.2.1"
+      }
+    }
+  ]
+}

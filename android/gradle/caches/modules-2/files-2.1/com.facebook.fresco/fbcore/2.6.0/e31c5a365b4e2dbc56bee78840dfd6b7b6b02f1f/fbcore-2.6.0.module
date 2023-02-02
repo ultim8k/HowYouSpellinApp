@@ -1,0 +1,58 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.facebook.fresco",
+    "module": "fbcore",
+    "version": "2.6.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.0.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "fbcore-2.6.0.aar",
+          "url": "fbcore-2.6.0.aar",
+          "size": 139472,
+          "sha512": "1b8a785ae5acaa1d983149a69d6fdf1acb04c214cbce195cdcebdd3e3b3cf75c3f508d37810a8bdba0659f5fb82414d5db7070ef6081c5cb77cc3327a87d9373",
+          "sha256": "8da9571eab5d47c1262db8ef34b635f12ed6785b20fb6e114229764cbe36973a",
+          "sha1": "e1e2a2d3ce49b7411954cef9994eaaa821f5db3f",
+          "md5": "0b939e3948b9f1d71b8bc53caec89381"
+        }
+      ]
+    },
+    {
+      "name": "releaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "fbcore-2.6.0.aar",
+          "url": "fbcore-2.6.0.aar",
+          "size": 139472,
+          "sha512": "1b8a785ae5acaa1d983149a69d6fdf1acb04c214cbce195cdcebdd3e3b3cf75c3f508d37810a8bdba0659f5fb82414d5db7070ef6081c5cb77cc3327a87d9373",
+          "sha256": "8da9571eab5d47c1262db8ef34b635f12ed6785b20fb6e114229764cbe36973a",
+          "sha1": "e1e2a2d3ce49b7411954cef9994eaaa821f5db3f",
+          "md5": "0b939e3948b9f1d71b8bc53caec89381"
+        }
+      ]
+    }
+  ]
+}

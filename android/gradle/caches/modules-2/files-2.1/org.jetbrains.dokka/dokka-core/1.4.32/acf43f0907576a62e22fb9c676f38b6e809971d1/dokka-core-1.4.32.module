@@ -1,0 +1,152 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "org.jetbrains.dokka",
+    "module": "dokka-core",
+    "version": "1.4.32",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.8.1",
+      "buildId": "joa3ux7klbajharrfjufeunr3q"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.localToProject": "public",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains",
+          "module": "markdown",
+          "version": {
+            "requires": "0.2.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.4.32"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "dokka-core-1.4.32.jar",
+          "url": "dokka-core-1.4.32.jar",
+          "size": 747557,
+          "sha512": "3407d433c48fc6a9bf824b3a2ba017b66f6fcf3f87ac89468696e1fbd5b8bae9fdc4fc610a6bc99bb1b342c1e62dba373605e54b05556f57a427d617e5e7f6a1",
+          "sha256": "b514f4fd11c410d1bf441b815da017607d32a500e1d200c423181aec3ed66fb1",
+          "sha1": "3011d0a885e87643e41d41a902e5905934251499",
+          "md5": "423080130bf82e51ba29c0d13814adb0"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.localToProject": "public",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-reflect",
+          "version": {
+            "requires": "1.4.32"
+          }
+        },
+        {
+          "group": "org.jsoup",
+          "module": "jsoup",
+          "version": {
+            "requires": "1.13.1"
+          }
+        },
+        {
+          "group": "com.fasterxml.jackson.module",
+          "module": "jackson-module-kotlin",
+          "version": {
+            "requires": "2.11.1"
+          }
+        },
+        {
+          "group": "com.fasterxml.jackson.dataformat",
+          "module": "jackson-dataformat-xml",
+          "version": {
+            "requires": "2.11.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.4.1"
+          }
+        },
+        {
+          "group": "org.jetbrains",
+          "module": "markdown",
+          "version": {
+            "requires": "0.2.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.4.32"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "dokka-core-1.4.32.jar",
+          "url": "dokka-core-1.4.32.jar",
+          "size": 747557,
+          "sha512": "3407d433c48fc6a9bf824b3a2ba017b66f6fcf3f87ac89468696e1fbd5b8bae9fdc4fc610a6bc99bb1b342c1e62dba373605e54b05556f57a427d617e5e7f6a1",
+          "sha256": "b514f4fd11c410d1bf441b815da017607d32a500e1d200c423181aec3ed66fb1",
+          "sha1": "3011d0a885e87643e41d41a902e5905934251499",
+          "md5": "423080130bf82e51ba29c0d13814adb0"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "dokka-core-1.4.32-sources.jar",
+          "url": "dokka-core-1.4.32-sources.jar",
+          "size": 44056,
+          "sha512": "e8792c407dfd3f0b9459da52437b88a5bf5b48a9de4511c3f87b3ef4e924a46dac37bc6620c1b31fc1c56187346d358b1b686cf0ea5f1b1129964ba63fb5751f",
+          "sha256": "720d5a884548613c4e6355a1467330f57da99c21601e9a2597a621a1c91b5abc",
+          "sha1": "91e49f5cf90a9a6fd3eb23954a3c330e8bbdcc14",
+          "md5": "9452e9a5743ca0d56d8300344d691588"
+        }
+      ]
+    }
+  ]
+}

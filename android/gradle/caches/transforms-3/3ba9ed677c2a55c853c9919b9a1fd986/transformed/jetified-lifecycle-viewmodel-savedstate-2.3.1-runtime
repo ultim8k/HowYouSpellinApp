@@ -1,0 +1,8 @@
+androidx.lifecycle.AbstractSavedStateViewModelFactory
+androidx.lifecycle.SavedStateHandle
+androidx.lifecycle.SavedStateHandle$1
+androidx.lifecycle.SavedStateHandle$SavingStateLiveData
+androidx.lifecycle.SavedStateHandleController
+androidx.lifecycle.SavedStateHandleController$1
+androidx.lifecycle.SavedStateHandleController$OnRecreation
+androidx.lifecycle.SavedStateViewModelFactory

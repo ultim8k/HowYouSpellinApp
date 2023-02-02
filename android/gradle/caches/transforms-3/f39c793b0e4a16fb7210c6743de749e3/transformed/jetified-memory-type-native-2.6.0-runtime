@@ -1,0 +1,3 @@
+com.facebook.fresco.memorytypes.nativememory.BuildConfig
+com.facebook.imagepipeline.memory.NativeMemoryChunk
+com.facebook.imagepipeline.memory.NativeMemoryChunkPool

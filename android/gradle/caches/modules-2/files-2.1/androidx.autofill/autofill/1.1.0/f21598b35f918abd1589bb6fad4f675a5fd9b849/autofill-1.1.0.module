@@ -1,0 +1,88 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "androidx.autofill",
+    "module": "autofill",
+    "version": "1.1.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.7",
+      "buildId:": "7066863"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "autofill-1.1.0.aar",
+          "url": "autofill-1.1.0.aar",
+          "size": 36282,
+          "sha512": "d1c4f361f7810b5d815617c2909d4c85a97b2eeec000d45b84926f746b92184b46357fb94173352f9fd0a4f52cd251b5b821e8fab727dc8bdf1999fe51192aab",
+          "sha256": "67ceb8267c274557c35758ebbe44890a203a5579bd2b084df34d70763c72f80f",
+          "sha1": "d9cdaa22b9c373ba75a35dcc33ee8871543164e5",
+          "md5": "47cc8920e8b8410d610421a49259469d"
+        }
+      ]
+    },
+    {
+      "name": "releaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.core",
+          "module": "core",
+          "version": {
+            "requires": "1.1.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "autofill-1.1.0.aar",
+          "url": "autofill-1.1.0.aar",
+          "size": 36282,
+          "sha512": "d1c4f361f7810b5d815617c2909d4c85a97b2eeec000d45b84926f746b92184b46357fb94173352f9fd0a4f52cd251b5b821e8fab727dc8bdf1999fe51192aab",
+          "sha256": "67ceb8267c274557c35758ebbe44890a203a5579bd2b084df34d70763c72f80f",
+          "sha1": "d9cdaa22b9c373ba75a35dcc33ee8871543164e5",
+          "md5": "47cc8920e8b8410d610421a49259469d"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "autofill-1.1.0-sources.jar",
+          "url": "autofill-1.1.0-sources.jar",
+          "size": 25672,
+          "sha512": "d3e8e86656c9b14e4a1ae10e5667f4334f4e7955fc3f308b28fa3e04745be0d1e7c2a9707e888009c42652ddc4f7427c1d993d164a7d35d749602bd3228964f2",
+          "sha256": "e154868bda2328908a4674998af3a09e3f65a649d95a87cbfe3f1aa415e28f2b",
+          "sha1": "078bdbf14bb97d579bf191bc0de7e969027c4375",
+          "md5": "25dd0e229cae0f7da23bddf7c9423e91"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,193 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.android.tools",
+    "module": "repository",
+    "version": "27.2.2",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.7.1",
+      "buildId": "zz53gouv6nfztoi24j3d3xklai"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.localToProject": "public",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "com.android.tools",
+          "module": "common",
+          "version": {
+            "requires": "27.2.2"
+          }
+        },
+        {
+          "group": "com.sun.activation",
+          "module": "javax.activation",
+          "version": {
+            "requires": "1.2.0"
+          }
+        },
+        {
+          "group": "org.apache.commons",
+          "module": "commons-compress",
+          "version": {
+            "requires": "1.12"
+          }
+        },
+        {
+          "group": "org.glassfish.jaxb",
+          "module": "jaxb-runtime",
+          "version": {
+            "requires": "2.3.2"
+          }
+        },
+        {
+          "group": "com.google.jimfs",
+          "module": "jimfs",
+          "version": {
+            "requires": "1.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.4.31"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "repository-27.2.2.jar",
+          "url": "repository-27.2.2.jar",
+          "size": 203156,
+          "sha512": "4ee1988be0ff49b8ca75f9daf3e873e698a06b2e7ce8253fe99c0aea4308f3dae6470a3f066cc673224cd3bf936a859810f9a0b3e039b0d6ccc3611487d7349d",
+          "sha256": "ac5f9b19dc5d9d08e80b57da76059f5760ca76c221e40ffd4bf43d7b13991674",
+          "sha1": "9ade3321767bb425a6ee381c6295940e2ad68454",
+          "md5": "533feaed16b46eca8344f57ae7c9e421"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.localToProject": "public",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "com.android.tools",
+          "module": "common",
+          "version": {
+            "requires": "27.2.2"
+          }
+        },
+        {
+          "group": "com.sun.activation",
+          "module": "javax.activation",
+          "version": {
+            "requires": "1.2.0"
+          }
+        },
+        {
+          "group": "org.apache.commons",
+          "module": "commons-compress",
+          "version": {
+            "requires": "1.12"
+          }
+        },
+        {
+          "group": "org.glassfish.jaxb",
+          "module": "jaxb-runtime",
+          "version": {
+            "requires": "2.3.2"
+          }
+        },
+        {
+          "group": "com.google.jimfs",
+          "module": "jimfs",
+          "version": {
+            "requires": "1.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.4.31"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "repository-27.2.2.jar",
+          "url": "repository-27.2.2.jar",
+          "size": 203156,
+          "sha512": "4ee1988be0ff49b8ca75f9daf3e873e698a06b2e7ce8253fe99c0aea4308f3dae6470a3f066cc673224cd3bf936a859810f9a0b3e039b0d6ccc3611487d7349d",
+          "sha256": "ac5f9b19dc5d9d08e80b57da76059f5760ca76c221e40ffd4bf43d7b13991674",
+          "sha1": "9ade3321767bb425a6ee381c6295940e2ad68454",
+          "md5": "533feaed16b46eca8344f57ae7c9e421"
+        }
+      ]
+    },
+    {
+      "name": "javadocElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "repository-27.2.2-javadoc.jar",
+          "url": "repository-27.2.2-javadoc.jar",
+          "size": 462033,
+          "sha512": "4299ccc7b1ed9dfd84a864e6c7ecb46951fce90001f24f7ab5b7e2d6993770709e4606ce4872bd550c3eee23e46b52a6d02042f3db0866c9e6c76c7e2507d3c5",
+          "sha256": "b5077b342be7225ec16aadb5f41f6b7b3ac3197158656709f6f3f7dd59f73566",
+          "sha1": "8f18ce63a262eae94fd809cff38119683d81d95e",
+          "md5": "e40d9f18e18fad7e9d5384dce37da8c4"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "repository-27.2.2-sources.jar",
+          "url": "repository-27.2.2-sources.jar",
+          "size": 333218,
+          "sha512": "e05d41f59d03bd0d5f2819ab275eff4bc24c77652b32b1847fa0f48ec371379ea82b6e1f8f017a5fd9c9613bc701eea8f06a8c8444e3339ed9c21f86729c4b2a",
+          "sha256": "de564a8a21e2092292fb67dd83fa4edb4be2b737bc140d716023b409a96550c6",
+          "sha1": "6e006a1434b02e80e05cfbc28aa7ecfdd3d46386",
+          "md5": "8acde99455995bc695ca07180ea52b43"
+        }
+      ]
+    }
+  ]
+}

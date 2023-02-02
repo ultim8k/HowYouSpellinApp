@@ -1,0 +1,74 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.facebook.fresco",
+    "module": "soloader",
+    "version": "2.5.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.0.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "soloader-2.5.0.aar",
+          "url": "soloader-2.5.0.aar",
+          "size": 1801,
+          "sha512": "eaa6a4281f03e633eb4a4afa53a0f4a6962f16262f7db30cdbb2a981ac3536583ea60e6fe5680d5032a5cce5eae6aa12734f861c51d0d3d3f673045fcce5febd",
+          "sha256": "a25fffc75437ef9c36be248df04b1371e4b01229f944014f756c5e182c519a82",
+          "sha1": "8829543f2720836579d4f0f944a90b57720e2792",
+          "md5": "2de2d351ce34ba5a420b3ce80a191154"
+        }
+      ]
+    },
+    {
+      "name": "releaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "com.facebook.fresco",
+          "module": "fbcore",
+          "version": {
+            "requires": "2.5.0"
+          }
+        },
+        {
+          "group": "com.facebook.soloader",
+          "module": "soloader",
+          "version": {
+            "requires": "0.10.1"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "soloader-2.5.0.aar",
+          "url": "soloader-2.5.0.aar",
+          "size": 1801,
+          "sha512": "eaa6a4281f03e633eb4a4afa53a0f4a6962f16262f7db30cdbb2a981ac3536583ea60e6fe5680d5032a5cce5eae6aa12734f861c51d0d3d3f673045fcce5febd",
+          "sha256": "a25fffc75437ef9c36be248df04b1371e4b01229f944014f756c5e182c519a82",
+          "sha1": "8829543f2720836579d4f0f944a90b57720e2792",
+          "md5": "2de2d351ce34ba5a420b3ce80a191154"
+        }
+      ]
+    }
+  ]
+}

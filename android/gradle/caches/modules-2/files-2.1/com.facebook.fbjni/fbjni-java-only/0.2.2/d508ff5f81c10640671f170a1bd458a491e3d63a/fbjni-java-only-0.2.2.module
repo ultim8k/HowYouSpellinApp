@@ -1,0 +1,70 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.facebook.fbjni",
+    "module": "fbjni-java-only",
+    "version": "0.2.2",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.8.2",
+      "buildId": "x7nildituzcqbnoh5ua54c74cy"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "fbjni-java-only-0.2.2.jar",
+          "url": "fbjni-java-only-0.2.2.jar",
+          "size": 12024,
+          "sha512": "93e0aac686b9a053e5357575293e41e4aa232eca1b42b34171aca96165722e0744fe2eb7e174cb8ffd268279c15496a7fbdf00c826f8f1446c0eddd7f27085a5",
+          "sha256": "7904e1c270fc2efafa7232001fbd5adb0521f624ee3a6e548d1efbcb5f30bcdf",
+          "sha1": "de5152e6b7ce18dd242be23994e702309e66e7da",
+          "md5": "29aab2e7bcddfd37ed35aed4e51d2f8e"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "com.facebook.soloader",
+          "module": "nativeloader",
+          "version": {
+            "requires": "0.10.1"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "fbjni-java-only-0.2.2.jar",
+          "url": "fbjni-java-only-0.2.2.jar",
+          "size": 12024,
+          "sha512": "93e0aac686b9a053e5357575293e41e4aa232eca1b42b34171aca96165722e0744fe2eb7e174cb8ffd268279c15496a7fbdf00c826f8f1446c0eddd7f27085a5",
+          "sha256": "7904e1c270fc2efafa7232001fbd5adb0521f624ee3a6e548d1efbcb5f30bcdf",
+          "sha1": "de5152e6b7ce18dd242be23994e702309e66e7da",
+          "md5": "29aab2e7bcddfd37ed35aed4e51d2f8e"
+        }
+      ]
+    }
+  ]
+}

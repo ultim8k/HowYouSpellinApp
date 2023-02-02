@@ -1,0 +1,161 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.android.tools.layoutlib",
+    "module": "layoutlib-api",
+    "version": "27.2.2",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.7.1",
+      "buildId": "zz53gouv6nfztoi24j3d3xklai"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "com.android.tools",
+          "module": "common",
+          "version": {
+            "requires": "27.2.2"
+          }
+        },
+        {
+          "group": "net.sf.kxml",
+          "module": "kxml2",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "com.android.tools",
+          "module": "annotations",
+          "version": {
+            "requires": "27.2.2"
+          }
+        },
+        {
+          "group": "org.jetbrains",
+          "module": "annotations",
+          "version": {
+            "requires": "13.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "layoutlib-api-27.2.2.jar",
+          "url": "layoutlib-api-27.2.2.jar",
+          "size": 112743,
+          "sha512": "028a2f501e6aaa8c32b2e510d676c9b15c211c4233f940fc06d0947920b4e2bc84b14cd928585ddd6b8ce62e47594657a5a43431d12c1461f86a648fd8386911",
+          "sha256": "f0901f2295d814e82ad95850ea2103dd89d8489e01727fafa55ccccc0dccd163",
+          "sha1": "591e9a6853d599248a7655bd4dffd4ab7fe5299c",
+          "md5": "f95cedd4a5b1785cb662cb74cf7c4652"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "com.android.tools",
+          "module": "common",
+          "version": {
+            "requires": "27.2.2"
+          }
+        },
+        {
+          "group": "net.sf.kxml",
+          "module": "kxml2",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "com.android.tools",
+          "module": "annotations",
+          "version": {
+            "requires": "27.2.2"
+          }
+        },
+        {
+          "group": "org.jetbrains",
+          "module": "annotations",
+          "version": {
+            "requires": "13.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "layoutlib-api-27.2.2.jar",
+          "url": "layoutlib-api-27.2.2.jar",
+          "size": 112743,
+          "sha512": "028a2f501e6aaa8c32b2e510d676c9b15c211c4233f940fc06d0947920b4e2bc84b14cd928585ddd6b8ce62e47594657a5a43431d12c1461f86a648fd8386911",
+          "sha256": "f0901f2295d814e82ad95850ea2103dd89d8489e01727fafa55ccccc0dccd163",
+          "sha1": "591e9a6853d599248a7655bd4dffd4ab7fe5299c",
+          "md5": "f95cedd4a5b1785cb662cb74cf7c4652"
+        }
+      ]
+    },
+    {
+      "name": "javadocElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "layoutlib-api-27.2.2-javadoc.jar",
+          "url": "layoutlib-api-27.2.2-javadoc.jar",
+          "size": 336587,
+          "sha512": "6b858a608b9a0a95ee3d12a2b22db816226a36295925f4b4cf329861c7582c3e1faa78be5cdca7c4c829c7ae23eed1f14c2a42032633ea65687c3beb81798057",
+          "sha256": "b90b8f2f04e34a6de96602cb408de13b19f3304c978c27ff5a4260c6d089f7dc",
+          "sha1": "35e37a3cb690f0077a4434855b4c59312efe1f34",
+          "md5": "94813de42ed58fec2146932c2c7d2a5c"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "layoutlib-api-27.2.2-sources.jar",
+          "url": "layoutlib-api-27.2.2-sources.jar",
+          "size": 106546,
+          "sha512": "5f0bd182678938232e70df9cc35db448510640cbc7a9f5fe8a9c172024b049cdef51e72b6d260acb011563328eac4059af71ea7224fa0c3f6fbeae33b6fa0d3f",
+          "sha256": "1dddb09b0146bbc9cfaf542ea985362310a8e76c2dcbc2050627976d41912c13",
+          "sha1": "c1dd38ec3ea29be1259551a2179fb15a9c236ca1",
+          "md5": "589cd19de8b5a42b9a8c50ae17788d7c"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.facebook.fresco",
+    "module": "middleware",
+    "version": "2.6.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.0.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "middleware-2.6.0.aar",
+          "url": "middleware-2.6.0.aar",
+          "size": 2422,
+          "sha512": "d04dfef189e77b506b7cce93981b8e2f66b7b6b184784f3270c167093d31d887a096136bd02fc8793e143c680ddbc05677d8c2b93cdbea3fcef7363eb4ce7a98",
+          "sha256": "0491399a1f351653875217a500e3b1e3356ea97b079bd123e58a2c70c5b44a14",
+          "sha1": "06666d80bd9f242a0a532f895ef56511a2439c26",
+          "md5": "ad3e2ef295a58965a5cad0b56f9730f9"
+        }
+      ]
+    },
+    {
+      "name": "releaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "com.facebook.fresco",
+          "module": "fbcore",
+          "version": {
+            "requires": "2.6.0"
+          }
+        },
+        {
+          "group": "com.facebook.fresco",
+          "module": "ui-common",
+          "version": {
+            "requires": "2.6.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "middleware-2.6.0.aar",
+          "url": "middleware-2.6.0.aar",
+          "size": 2422,
+          "sha512": "d04dfef189e77b506b7cce93981b8e2f66b7b6b184784f3270c167093d31d887a096136bd02fc8793e143c680ddbc05677d8c2b93cdbea3fcef7363eb4ce7a98",
+          "sha256": "0491399a1f351653875217a500e3b1e3356ea97b079bd123e58a2c70c5b44a14",
+          "sha1": "06666d80bd9f242a0a532f895ef56511a2439c26",
+          "md5": "ad3e2ef295a58965a5cad0b56f9730f9"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.facebook.fresco",
+    "module": "ui-common",
+    "version": "2.5.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.0.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "ui-common-2.5.0.aar",
+          "url": "ui-common-2.5.0.aar",
+          "size": 8458,
+          "sha512": "df6c25149693832e2dbae1424d32774a10c4f8caaa3bbd0620f0ed01c125acfec2c9248f746049c0c53e7f9291ce2cf8f6adde3f78022f62e9f32e075676c8e1",
+          "sha256": "4edba2d5a4fbdb862fd89d210e640603d4ace1fc35d3a0d839f16e7bf0a5222d",
+          "sha1": "224851cf4c074aeff5dc42861b557870459a9d28",
+          "md5": "0d33fed558ef8c14e5f37e11e99d38ef"
+        }
+      ]
+    },
+    {
+      "name": "releaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "com.facebook.fresco",
+          "module": "fbcore",
+          "version": {
+            "requires": "2.5.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "ui-common-2.5.0.aar",
+          "url": "ui-common-2.5.0.aar",
+          "size": 8458,
+          "sha512": "df6c25149693832e2dbae1424d32774a10c4f8caaa3bbd0620f0ed01c125acfec2c9248f746049c0c53e7f9291ce2cf8f6adde3f78022f62e9f32e075676c8e1",
+          "sha256": "4edba2d5a4fbdb862fd89d210e640603d4ace1fc35d3a0d839f16e7bf0a5222d",
+          "sha1": "224851cf4c074aeff5dc42861b557870459a9d28",
+          "md5": "0d33fed558ef8c14e5f37e11e99d38ef"
+        }
+      ]
+    }
+  ]
+}

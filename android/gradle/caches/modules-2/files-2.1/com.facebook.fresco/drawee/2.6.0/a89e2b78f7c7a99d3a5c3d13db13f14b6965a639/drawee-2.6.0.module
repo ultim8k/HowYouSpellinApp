@@ -1,0 +1,116 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.facebook.fresco",
+    "module": "drawee",
+    "version": "2.6.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.0.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "drawee-2.6.0.aar",
+          "url": "drawee-2.6.0.aar",
+          "size": 144414,
+          "sha512": "d4c59a04e79b202b9a4412d8c28a3f521403f0597630dfdd8f08b627b9bc9cc3c31b2346c302635fbea998e43a8b66bc6e05828f3804008772e8ed84bf5d72e3",
+          "sha256": "52b23423b2f417daa12f9bb4d123644bffe14accccd42825e4defd239c5f5baf",
+          "sha1": "8b1404a10e7d7b4e4eb8ca04b51582a64c704e31",
+          "md5": "e72accbb1a2cb80557ea43dbde4dbe7e"
+        }
+      ]
+    },
+    {
+      "name": "releaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "com.facebook.fresco",
+          "module": "fbcore",
+          "version": {
+            "requires": "2.6.0"
+          }
+        },
+        {
+          "group": "com.facebook.fresco",
+          "module": "imagepipeline",
+          "version": {
+            "requires": "2.6.0"
+          }
+        },
+        {
+          "group": "com.facebook.fresco",
+          "module": "imagepipeline-native",
+          "version": {
+            "requires": "2.6.0"
+          }
+        },
+        {
+          "group": "com.facebook.fresco",
+          "module": "memory-type-ashmem",
+          "version": {
+            "requires": "2.6.0"
+          }
+        },
+        {
+          "group": "com.facebook.fresco",
+          "module": "memory-type-native",
+          "version": {
+            "requires": "2.6.0"
+          }
+        },
+        {
+          "group": "com.facebook.fresco",
+          "module": "memory-type-java",
+          "version": {
+            "requires": "2.6.0"
+          }
+        },
+        {
+          "group": "com.facebook.fresco",
+          "module": "ui-common",
+          "version": {
+            "requires": "2.6.0"
+          }
+        },
+        {
+          "group": "com.facebook.fresco",
+          "module": "middleware",
+          "version": {
+            "requires": "2.6.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "drawee-2.6.0.aar",
+          "url": "drawee-2.6.0.aar",
+          "size": 144414,
+          "sha512": "d4c59a04e79b202b9a4412d8c28a3f521403f0597630dfdd8f08b627b9bc9cc3c31b2346c302635fbea998e43a8b66bc6e05828f3804008772e8ed84bf5d72e3",
+          "sha256": "52b23423b2f417daa12f9bb4d123644bffe14accccd42825e4defd239c5f5baf",
+          "sha1": "8b1404a10e7d7b4e4eb8ca04b51582a64c704e31",
+          "md5": "e72accbb1a2cb80557ea43dbde4dbe7e"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,277 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "androidx.databinding",
+    "module": "databinding-compiler-common",
+    "version": "4.2.2",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.7.1",
+      "buildId": "zz53gouv6nfztoi24j3d3xklai"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.localToProject": "public",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.databinding",
+          "module": "databinding-common",
+          "version": {
+            "requires": "4.2.2"
+          }
+        },
+        {
+          "group": "com.android.databinding",
+          "module": "baseLibrary",
+          "version": {
+            "requires": "4.2.2"
+          }
+        },
+        {
+          "group": "org.antlr",
+          "module": "antlr4",
+          "version": {
+            "requires": "4.5.3"
+          }
+        },
+        {
+          "group": "commons-io",
+          "module": "commons-io",
+          "version": {
+            "requires": "2.4"
+          }
+        },
+        {
+          "group": "com.googlecode.juniversalchardet",
+          "module": "juniversalchardet",
+          "version": {
+            "requires": "1.0.3"
+          }
+        },
+        {
+          "group": "com.google.guava",
+          "module": "guava",
+          "version": {
+            "requires": "28.1-jre"
+          }
+        },
+        {
+          "group": "com.squareup",
+          "module": "javapoet",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.4.31"
+          }
+        },
+        {
+          "group": "com.google.code.gson",
+          "module": "gson",
+          "version": {
+            "requires": "2.8.6"
+          }
+        },
+        {
+          "group": "org.glassfish.jaxb",
+          "module": "jaxb-runtime",
+          "version": {
+            "requires": "2.3.2"
+          }
+        },
+        {
+          "group": "com.android.tools",
+          "module": "annotations",
+          "version": {
+            "requires": "27.2.2"
+          }
+        },
+        {
+          "group": "com.android.tools.build.jetifier",
+          "module": "jetifier-core",
+          "version": {
+            "requires": "1.0.0-beta09"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "databinding-compiler-common-4.2.2.jar",
+          "url": "databinding-compiler-common-4.2.2.jar",
+          "size": 484234,
+          "sha512": "cf11ef9f602d7eaa2f755423272f58310ad1f80b1ebe710fdb9637247b1bee3e5e79982f1ca5fb591bb9327985a28b08f87c382e2048dfbfdf121a9e699afac8",
+          "sha256": "ec212fbdb77e41386b5b423b12b69f4d839f954c79d449bc57c648e603a1b755",
+          "sha1": "eb4a4be28f072f8277181f69756f94433404d386",
+          "md5": "c299c29a1f2bfc220750f258326f4f0b"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.localToProject": "public",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.databinding",
+          "module": "databinding-common",
+          "version": {
+            "requires": "4.2.2"
+          }
+        },
+        {
+          "group": "com.android.databinding",
+          "module": "baseLibrary",
+          "version": {
+            "requires": "4.2.2"
+          }
+        },
+        {
+          "group": "org.antlr",
+          "module": "antlr4",
+          "version": {
+            "requires": "4.5.3"
+          }
+        },
+        {
+          "group": "commons-io",
+          "module": "commons-io",
+          "version": {
+            "requires": "2.4"
+          }
+        },
+        {
+          "group": "com.googlecode.juniversalchardet",
+          "module": "juniversalchardet",
+          "version": {
+            "requires": "1.0.3"
+          }
+        },
+        {
+          "group": "com.google.guava",
+          "module": "guava",
+          "version": {
+            "requires": "28.1-jre"
+          }
+        },
+        {
+          "group": "com.squareup",
+          "module": "javapoet",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.4.31"
+          }
+        },
+        {
+          "group": "com.google.code.gson",
+          "module": "gson",
+          "version": {
+            "requires": "2.8.6"
+          }
+        },
+        {
+          "group": "org.glassfish.jaxb",
+          "module": "jaxb-runtime",
+          "version": {
+            "requires": "2.3.2"
+          }
+        },
+        {
+          "group": "com.android.tools",
+          "module": "annotations",
+          "version": {
+            "requires": "27.2.2"
+          }
+        },
+        {
+          "group": "com.android.tools.build.jetifier",
+          "module": "jetifier-core",
+          "version": {
+            "requires": "1.0.0-beta09"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "databinding-compiler-common-4.2.2.jar",
+          "url": "databinding-compiler-common-4.2.2.jar",
+          "size": 484234,
+          "sha512": "cf11ef9f602d7eaa2f755423272f58310ad1f80b1ebe710fdb9637247b1bee3e5e79982f1ca5fb591bb9327985a28b08f87c382e2048dfbfdf121a9e699afac8",
+          "sha256": "ec212fbdb77e41386b5b423b12b69f4d839f954c79d449bc57c648e603a1b755",
+          "sha1": "eb4a4be28f072f8277181f69756f94433404d386",
+          "md5": "c299c29a1f2bfc220750f258326f4f0b"
+        }
+      ]
+    },
+    {
+      "name": "javadocElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "databinding-compiler-common-4.2.2-javadoc.jar",
+          "url": "databinding-compiler-common-4.2.2-javadoc.jar",
+          "size": 421069,
+          "sha512": "dcc8460d3824e549c2d49e9834e7f14df92581293a0f21b17e7b8d8803b977ce9df42e310300928cbb04a21d8012996567d5a3194723d802be841d420ee1a4e2",
+          "sha256": "5a6f3595cc96c6108124aaa259836c45e0ef736f359bdbeb54b6e1707e31e7d5",
+          "sha1": "448b6089bcf882cf83c1ec18bc5a939c4dc58aee",
+          "md5": "fbea69bc93287f1c7ff4d4cf1ab2603f"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "databinding-compiler-common-4.2.2-sources.jar",
+          "url": "databinding-compiler-common-4.2.2-sources.jar",
+          "size": 196904,
+          "sha512": "2df0b62b3ebf7764a1d2ffc206159ae3d8aa85798b2cee57ddf9fb4e98e1e6201bcf29dd0da4172b9c3052cf29ca1142439b9b26ff9cb5811660eaaeb15e8363",
+          "sha256": "ba9e728f4f29b3199a32c0c4ed6a4b1b87b145ee6370cacd6d6aef1578a7835e",
+          "sha1": "b8502d9a445063c356082e8c6ff063267cfb3029",
+          "md5": "4efebef969c21b8e2e70658013b9e9fc"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.facebook.fresco",
+    "module": "memory-type-java",
+    "version": "2.6.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.0.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "memory-type-java-2.6.0.aar",
+          "url": "memory-type-java-2.6.0.aar",
+          "size": 5501,
+          "sha512": "cb1be4c57974f3a41a17a16592dd467cb3afa1cd76ec662cf3f0b2c09b805c405cd153551a483d43acbee7eb3a379d8f3892e166fe30446a2ffe1d76ecb43cf5",
+          "sha256": "d439fd12c263adb9f268e291d3d57b5dfddc11bbb29160076db70c3c908b4386",
+          "sha1": "c59aa64d699ab217303e976ccd02c121bd198106",
+          "md5": "335c7ac0fe9d627c6f0e2a5ca1f62f15"
+        }
+      ]
+    },
+    {
+      "name": "releaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "com.facebook.fresco",
+          "module": "fbcore",
+          "version": {
+            "requires": "2.6.0"
+          }
+        },
+        {
+          "group": "com.facebook.fresco",
+          "module": "imagepipeline",
+          "version": {
+            "requires": "2.6.0"
+          }
+        },
+        {
+          "group": "com.facebook.fresco",
+          "module": "imagepipeline-native",
+          "version": {
+            "requires": "2.6.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "memory-type-java-2.6.0.aar",
+          "url": "memory-type-java-2.6.0.aar",
+          "size": 5501,
+          "sha512": "cb1be4c57974f3a41a17a16592dd467cb3afa1cd76ec662cf3f0b2c09b805c405cd153551a483d43acbee7eb3a379d8f3892e166fe30446a2ffe1d76ecb43cf5",
+          "sha256": "d439fd12c263adb9f268e291d3d57b5dfddc11bbb29160076db70c3c908b4386",
+          "sha1": "c59aa64d699ab217303e976ccd02c121bd198106",
+          "md5": "335c7ac0fe9d627c6f0e2a5ca1f62f15"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+com.facebook.imagepipeline.nativecode.NativeBlurFilter
+com.facebook.imagepipeline.nativecode.NativeFiltersLoader
+com.facebook.imagepipeline.nativecode.NativeRoundingFilter
+com.facebook.imagepipeline.postprocessors.IterativeBoxBlurPostProcessor
+com.facebook.imagepipeline.postprocessors.RoundAsCirclePostprocessor
+com.facebook.imagepipeline.postprocessors.RoundedCornersPostprocessor
+com.facebook.nativefilters.BuildConfig

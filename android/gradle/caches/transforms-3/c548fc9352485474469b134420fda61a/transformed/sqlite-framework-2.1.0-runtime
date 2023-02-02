@@ -1,0 +1,9 @@
+androidx.sqlite.db.framework.FrameworkSQLiteDatabase
+androidx.sqlite.db.framework.FrameworkSQLiteDatabase$1
+androidx.sqlite.db.framework.FrameworkSQLiteDatabase$2
+androidx.sqlite.db.framework.FrameworkSQLiteOpenHelper
+androidx.sqlite.db.framework.FrameworkSQLiteOpenHelper$OpenHelper
+androidx.sqlite.db.framework.FrameworkSQLiteOpenHelper$OpenHelper$1
+androidx.sqlite.db.framework.FrameworkSQLiteOpenHelperFactory
+androidx.sqlite.db.framework.FrameworkSQLiteProgram
+androidx.sqlite.db.framework.FrameworkSQLiteStatement

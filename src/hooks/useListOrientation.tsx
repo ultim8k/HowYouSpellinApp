@@ -20,7 +20,7 @@ export const ListOrientationProvider: React.FC<
   ListOrientationProviderProps
 > = ({children}) => {
   const [listOrientation, setListOrientation] =
-    React.useState<ListOrientation>('vertical');
+    React.useState<ListOrientation>('horizontal');
 
   const changeListOrientation = (): void => {
     const nextOrientation: ListOrientation =

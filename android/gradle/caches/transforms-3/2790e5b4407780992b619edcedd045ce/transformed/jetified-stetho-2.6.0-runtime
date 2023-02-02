@@ -1,0 +1,3 @@
+com.facebook.fresco.stetho.BuildConfig
+com.facebook.imagepipeline.stetho.BaseFrescoStethoPlugin
+com.facebook.imagepipeline.stetho.FrescoStethoPlugin

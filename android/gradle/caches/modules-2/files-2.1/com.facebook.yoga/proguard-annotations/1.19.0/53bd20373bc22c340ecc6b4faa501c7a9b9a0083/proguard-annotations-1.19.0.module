@@ -1,0 +1,60 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.facebook.yoga",
+    "module": "proguard-annotations",
+    "version": "1.19.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.0.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 7,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "proguard-annotations-1.19.0.jar",
+          "url": "proguard-annotations-1.19.0.jar",
+          "size": 1607,
+          "sha512": "6a6f73372446e57e894d7b46bf976e4f6422ba0c9d4bad38aea5b474598468cc8b69609841b4f4050c3f3086bfcc0f089a11b0dca83d3382245041da49d013fb",
+          "sha256": "fb65f706eea05b5640fb6b93d21d6c41f9e2b4e7a6e6d9f28ce9d2a574474995",
+          "sha1": "fcbbb39052e6490eaaf6a6959c49c3a4fbe87c63",
+          "md5": "cc0d56a06498589c4f44a97eccaff359"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 7,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "proguard-annotations-1.19.0.jar",
+          "url": "proguard-annotations-1.19.0.jar",
+          "size": 1607,
+          "sha512": "6a6f73372446e57e894d7b46bf976e4f6422ba0c9d4bad38aea5b474598468cc8b69609841b4f4050c3f3086bfcc0f089a11b0dca83d3382245041da49d013fb",
+          "sha256": "fb65f706eea05b5640fb6b93d21d6c41f9e2b4e7a6e6d9f28ce9d2a574474995",
+          "sha1": "fcbbb39052e6490eaaf6a6959c49c3a4fbe87c63",
+          "md5": "cc0d56a06498589c4f44a97eccaff359"
+        }
+      ]
+    }
+  ]
+}

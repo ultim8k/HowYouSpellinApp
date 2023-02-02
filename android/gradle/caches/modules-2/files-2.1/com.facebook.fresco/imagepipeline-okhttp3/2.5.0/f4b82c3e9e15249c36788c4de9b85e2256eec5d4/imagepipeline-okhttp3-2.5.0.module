@@ -1,0 +1,118 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.facebook.fresco",
+    "module": "imagepipeline-okhttp3",
+    "version": "2.5.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.0.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "com.squareup.okhttp3",
+          "module": "okhttp",
+          "version": {
+            "requires": "3.12.1"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "imagepipeline-okhttp3-2.5.0.aar",
+          "url": "imagepipeline-okhttp3-2.5.0.aar",
+          "size": 9853,
+          "sha512": "746af40d5a0eb2adebedb8aac71da360f7a86a09124e830f8bf9dd8acf4363089c9bef8649973469601c29882380165e47f59d6d7e9fe0538972e08c2ade3dbc",
+          "sha256": "0a893263557c4dca4b456b36547d2674c1769581660dce11dbb040710837c609",
+          "sha1": "8e274a77ffbe9f8334e09855b2a811b2a63a5708",
+          "md5": "0693482301c46f5ec1262d0d93ccf757"
+        }
+      ]
+    },
+    {
+      "name": "releaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "com.facebook.fresco",
+          "module": "fbcore",
+          "version": {
+            "requires": "2.5.0"
+          }
+        },
+        {
+          "group": "com.facebook.fresco",
+          "module": "imagepipeline",
+          "version": {
+            "requires": "2.5.0"
+          }
+        },
+        {
+          "group": "com.facebook.fresco",
+          "module": "imagepipeline-native",
+          "version": {
+            "requires": "2.5.0"
+          }
+        },
+        {
+          "group": "com.facebook.fresco",
+          "module": "memory-type-ashmem",
+          "version": {
+            "requires": "2.5.0"
+          }
+        },
+        {
+          "group": "com.facebook.fresco",
+          "module": "memory-type-native",
+          "version": {
+            "requires": "2.5.0"
+          }
+        },
+        {
+          "group": "com.facebook.fresco",
+          "module": "memory-type-java",
+          "version": {
+            "requires": "2.5.0"
+          }
+        },
+        {
+          "group": "com.squareup.okhttp3",
+          "module": "okhttp",
+          "version": {
+            "requires": "3.12.1"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "imagepipeline-okhttp3-2.5.0.aar",
+          "url": "imagepipeline-okhttp3-2.5.0.aar",
+          "size": 9853,
+          "sha512": "746af40d5a0eb2adebedb8aac71da360f7a86a09124e830f8bf9dd8acf4363089c9bef8649973469601c29882380165e47f59d6d7e9fe0538972e08c2ade3dbc",
+          "sha256": "0a893263557c4dca4b456b36547d2674c1769581660dce11dbb040710837c609",
+          "sha1": "8e274a77ffbe9f8334e09855b2a811b2a63a5708",
+          "md5": "0693482301c46f5ec1262d0d93ccf757"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.facebook.fresco",
+    "module": "imagepipeline-native",
+    "version": "2.6.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.0.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "imagepipeline-native-2.6.0.aar",
+          "url": "imagepipeline-native-2.6.0.aar",
+          "size": 26859,
+          "sha512": "f887f59a47d985e76967dd6ce37917084d77d0257a60344f0888319087eb3f2358c9cc614aeeae0230715b4d5926a1b9687136f8fe0964cc700b2b11644a2430",
+          "sha256": "454097672500dde403c08d345ad96b3011ac755fb80fad372fa2b8e82ab3efea",
+          "sha1": "f8e65e897a883ac4f754d57897aaba0016c8beba",
+          "md5": "b58697619064dc4c2d21d2caab7e0648"
+        }
+      ]
+    },
+    {
+      "name": "releaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "com.facebook.fresco",
+          "module": "imagepipeline",
+          "version": {
+            "requires": "2.6.0"
+          }
+        },
+        {
+          "group": "com.facebook.fresco",
+          "module": "fbcore",
+          "version": {
+            "requires": "2.6.0"
+          }
+        },
+        {
+          "group": "com.facebook.soloader",
+          "module": "soloader",
+          "version": {
+            "requires": "0.10.1"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "imagepipeline-native-2.6.0.aar",
+          "url": "imagepipeline-native-2.6.0.aar",
+          "size": 26859,
+          "sha512": "f887f59a47d985e76967dd6ce37917084d77d0257a60344f0888319087eb3f2358c9cc614aeeae0230715b4d5926a1b9687136f8fe0964cc700b2b11644a2430",
+          "sha256": "454097672500dde403c08d345ad96b3011ac755fb80fad372fa2b8e82ab3efea",
+          "sha1": "f8e65e897a883ac4f754d57897aaba0016c8beba",
+          "md5": "b58697619064dc4c2d21d2caab7e0648"
+        }
+      ]
+    }
+  ]
+}

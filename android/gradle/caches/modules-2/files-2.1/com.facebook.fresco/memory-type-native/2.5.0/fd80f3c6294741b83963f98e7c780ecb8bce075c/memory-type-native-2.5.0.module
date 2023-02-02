@@ -1,0 +1,88 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.facebook.fresco",
+    "module": "memory-type-native",
+    "version": "2.5.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.0.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "memory-type-native-2.5.0.aar",
+          "url": "memory-type-native-2.5.0.aar",
+          "size": 5827,
+          "sha512": "d3c6eda0381cb18cf2715699e77f60055399f043e2e804464b0c60f3ea8698efdc1b95506232714cc7daab9823e2df733d3ab528f0c9adfeecbedeedfa9367b2",
+          "sha256": "ab5887bc81b20235204a7a3b060630d4ea668ef6ffabf1eaa799c76ab3ca29dd",
+          "sha1": "7eb7c52ee2a4d40b7f706c90069549410236aaa5",
+          "md5": "e3ab30bb0e7814a064463ceca0e8e09a"
+        }
+      ]
+    },
+    {
+      "name": "releaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "com.facebook.fresco",
+          "module": "fbcore",
+          "version": {
+            "requires": "2.5.0"
+          }
+        },
+        {
+          "group": "com.facebook.fresco",
+          "module": "imagepipeline",
+          "version": {
+            "requires": "2.5.0"
+          }
+        },
+        {
+          "group": "com.facebook.fresco",
+          "module": "imagepipeline-native",
+          "version": {
+            "requires": "2.5.0"
+          }
+        },
+        {
+          "group": "com.facebook.soloader",
+          "module": "nativeloader",
+          "version": {
+            "requires": "0.10.1"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "memory-type-native-2.5.0.aar",
+          "url": "memory-type-native-2.5.0.aar",
+          "size": 5827,
+          "sha512": "d3c6eda0381cb18cf2715699e77f60055399f043e2e804464b0c60f3ea8698efdc1b95506232714cc7daab9823e2df733d3ab528f0c9adfeecbedeedfa9367b2",
+          "sha256": "ab5887bc81b20235204a7a3b060630d4ea668ef6ffabf1eaa799c76ab3ca29dd",
+          "sha1": "7eb7c52ee2a4d40b7f706c90069549410236aaa5",
+          "md5": "e3ab30bb0e7814a064463ceca0e8e09a"
+        }
+      ]
+    }
+  ]
+}

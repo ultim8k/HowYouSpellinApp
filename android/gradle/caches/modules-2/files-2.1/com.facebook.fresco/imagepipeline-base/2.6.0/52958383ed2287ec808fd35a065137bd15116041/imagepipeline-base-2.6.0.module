@@ -1,0 +1,88 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.facebook.fresco",
+    "module": "imagepipeline-base",
+    "version": "2.6.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.0.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "imagepipeline-base-2.6.0.aar",
+          "url": "imagepipeline-base-2.6.0.aar",
+          "size": 173570,
+          "sha512": "9edba8a43924953e0943d93db0c1f09b4612011bba73c023d45676a9ea502a5b7ce5782af11b1213b9407720f0cf99383eb106ad578aac45a0f8361a597ee056",
+          "sha256": "475afda09b15551baadb58e149b5b4a8b1999b6491068c94922bc925c915a60e",
+          "sha1": "772cce0f0bc5e97d299dbeb704215a82c9499da3",
+          "md5": "12d3b368a42b23cee73d791e49c89d20"
+        }
+      ]
+    },
+    {
+      "name": "releaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "com.facebook.infer.annotation",
+          "module": "infer-annotation",
+          "version": {
+            "requires": "0.18.0"
+          }
+        },
+        {
+          "group": "com.facebook.soloader",
+          "module": "annotation",
+          "version": {
+            "requires": "0.10.1"
+          }
+        },
+        {
+          "group": "com.parse.bolts",
+          "module": "bolts-tasks",
+          "version": {
+            "requires": "1.4.0"
+          }
+        },
+        {
+          "group": "com.facebook.fresco",
+          "module": "fbcore",
+          "version": {
+            "requires": "2.6.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "imagepipeline-base-2.6.0.aar",
+          "url": "imagepipeline-base-2.6.0.aar",
+          "size": 173570,
+          "sha512": "9edba8a43924953e0943d93db0c1f09b4612011bba73c023d45676a9ea502a5b7ce5782af11b1213b9407720f0cf99383eb106ad578aac45a0f8361a597ee056",
+          "sha256": "475afda09b15551baadb58e149b5b4a8b1999b6491068c94922bc925c915a60e",
+          "sha1": "772cce0f0bc5e97d299dbeb704215a82c9499da3",
+          "md5": "12d3b368a42b23cee73d791e49c89d20"
+        }
+      ]
+    }
+  ]
+}

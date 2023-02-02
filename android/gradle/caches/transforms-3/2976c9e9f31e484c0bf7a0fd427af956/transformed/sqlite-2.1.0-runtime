@@ -1,0 +1,11 @@
+androidx.sqlite.db.SimpleSQLiteQuery
+androidx.sqlite.db.SupportSQLiteDatabase
+androidx.sqlite.db.SupportSQLiteOpenHelper
+androidx.sqlite.db.SupportSQLiteOpenHelper$Callback
+androidx.sqlite.db.SupportSQLiteOpenHelper$Configuration
+androidx.sqlite.db.SupportSQLiteOpenHelper$Configuration$Builder
+androidx.sqlite.db.SupportSQLiteOpenHelper$Factory
+androidx.sqlite.db.SupportSQLiteProgram
+androidx.sqlite.db.SupportSQLiteQuery
+androidx.sqlite.db.SupportSQLiteQueryBuilder
+androidx.sqlite.db.SupportSQLiteStatement

@@ -1,0 +1,89 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "androidx.resourceinspection",
+    "module": "resourceinspection-annotation",
+    "version": "1.0.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "resourceinspection-annotation-1.0.0.jar",
+          "url": "resourceinspection-annotation-1.0.0.jar",
+          "size": 2336,
+          "sha512": "f827446c6aaeaf1187eeeb39c63f2f25179f492826d35c23208990d8a16557a829ab33c76e2fd446c6fe4d6b9e8d8391c570dd6e16776ccf3335140738b8b29a",
+          "sha256": "8cff870ec6fb31db48a52f4a792335b4bf8de07e03bd37823181526433ccd5cb",
+          "sha1": "8c21f8ff5d96d5d52c948707f7e4d6ca6773feef",
+          "md5": "76145035148c5ffbf408b41ee8d58da7"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.1.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "resourceinspection-annotation-1.0.0.jar",
+          "url": "resourceinspection-annotation-1.0.0.jar",
+          "size": 2336,
+          "sha512": "f827446c6aaeaf1187eeeb39c63f2f25179f492826d35c23208990d8a16557a829ab33c76e2fd446c6fe4d6b9e8d8391c570dd6e16776ccf3335140738b8b29a",
+          "sha256": "8cff870ec6fb31db48a52f4a792335b4bf8de07e03bd37823181526433ccd5cb",
+          "sha1": "8c21f8ff5d96d5d52c948707f7e4d6ca6773feef",
+          "md5": "76145035148c5ffbf408b41ee8d58da7"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "resourceinspection-annotation-1.0.0-sources.jar",
+          "url": "resourceinspection-annotation-1.0.0-sources.jar",
+          "size": 3653,
+          "sha512": "f0b6b9e4ae0a990ed87f27f392652d74facf354a91333efed9e72998d751b0ab5790b0f4e3fa9651ca5bfef719a1ff474ab513f9df07ed85927564ac440cb6d0",
+          "sha256": "74b4ab5cf60342b1ed2eafa1f8903de31f436188b1b8d3246fd27c6fb5c9e07a",
+          "sha1": "75e409340e360dbd251ffcc5d2c83a334ab2c73e",
+          "md5": "3f2842c210d8bd2bb00a42933f9bbab5"
+        }
+      ]
+    }
+  ]
+}

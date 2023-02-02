@@ -1,0 +1,3 @@
+com.facebook.fresco.memorytypes.simple.BuildConfig
+com.facebook.imagepipeline.memory.BufferMemoryChunk
+com.facebook.imagepipeline.memory.BufferMemoryChunkPool

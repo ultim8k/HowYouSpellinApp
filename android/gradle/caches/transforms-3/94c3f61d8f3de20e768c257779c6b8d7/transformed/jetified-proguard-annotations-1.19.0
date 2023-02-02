@@ -1,0 +1,2 @@
+com.facebook.proguard.annotations.DoNotStrip
+com.facebook.proguard.annotations.DoNotStripAny

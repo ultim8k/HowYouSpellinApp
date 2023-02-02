@@ -1,0 +1,147 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.android.tools.ddms",
+    "module": "ddmlib",
+    "version": "27.2.2",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.7.1",
+      "buildId": "zz53gouv6nfztoi24j3d3xklai"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "com.android.tools",
+          "module": "common",
+          "version": {
+            "requires": "27.2.2"
+          }
+        },
+        {
+          "group": "net.sf.kxml",
+          "module": "kxml2",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "com.google.protobuf",
+          "module": "protobuf-java",
+          "version": {
+            "requires": "3.10.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "ddmlib-27.2.2.jar",
+          "url": "ddmlib-27.2.2.jar",
+          "size": 483826,
+          "sha512": "f1ee55303d9e372aeb6e6f8865806d5a340570937dea70b287a464bb47998299a5376d130baa932cd9198b13d728f3d8a468a6b3c408cd7084363614085e4431",
+          "sha256": "9ab0f9b58737c316af454184705854c75936ca3531f21acc29bd68a3343334d1",
+          "sha1": "e283d41f0498755b4946677eb2ae62fb2fb2c702",
+          "md5": "ac7c733e091492eafb458f2461b3d9c0"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "com.android.tools",
+          "module": "common",
+          "version": {
+            "requires": "27.2.2"
+          }
+        },
+        {
+          "group": "net.sf.kxml",
+          "module": "kxml2",
+          "version": {
+            "requires": "2.3.0"
+          }
+        },
+        {
+          "group": "com.google.protobuf",
+          "module": "protobuf-java",
+          "version": {
+            "requires": "3.10.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "ddmlib-27.2.2.jar",
+          "url": "ddmlib-27.2.2.jar",
+          "size": 483826,
+          "sha512": "f1ee55303d9e372aeb6e6f8865806d5a340570937dea70b287a464bb47998299a5376d130baa932cd9198b13d728f3d8a468a6b3c408cd7084363614085e4431",
+          "sha256": "9ab0f9b58737c316af454184705854c75936ca3531f21acc29bd68a3343334d1",
+          "sha1": "e283d41f0498755b4946677eb2ae62fb2fb2c702",
+          "md5": "ac7c733e091492eafb458f2461b3d9c0"
+        }
+      ]
+    },
+    {
+      "name": "javadocElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "ddmlib-27.2.2-javadoc.jar",
+          "url": "ddmlib-27.2.2-javadoc.jar",
+          "size": 556211,
+          "sha512": "a8b8e61e9797e8eedef6325eb89ace910551d2a7b444300ae7ebc29d42db8aa70604607a3becf5f89b322821377f67e701aeb9c0f6761d4c534e21cf51fc7f95",
+          "sha256": "1fa583cdb5499ae81247d3f21429b904a5f2dea9db0197d85ee905fc3b9abb60",
+          "sha1": "e202fdc50fedd2e79c564de281d3309c7560a608",
+          "md5": "2cbc02bf4b33989d41395d203f22921e"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "ddmlib-27.2.2-sources.jar",
+          "url": "ddmlib-27.2.2-sources.jar",
+          "size": 607992,
+          "sha512": "f754ad852e17b0163cecd936c9deb977788367c2812e257f38960ebd5c5249dcbdc27de4d809eaaa0d47deb3488fbb263bf49650d1e65250d705196a96c9e30f",
+          "sha256": "076e3fe0d99e000607739449868acfa3cc016dc7e22a43ca8b955ecc45e27ae2",
+          "sha1": "537575a5d3cdb4a7a4c3efd2194b32ed0b6c5f18",
+          "md5": "5066d33ec63d37e94dadb20f36f7c6c8"
+        }
+      ]
+    }
+  ]
+}

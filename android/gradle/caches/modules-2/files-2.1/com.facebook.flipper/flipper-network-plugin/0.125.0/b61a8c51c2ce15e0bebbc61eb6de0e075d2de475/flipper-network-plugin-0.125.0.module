@@ -1,0 +1,74 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.facebook.flipper",
+    "module": "flipper-network-plugin",
+    "version": "0.125.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.0.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "flipper-network-plugin-0.125.0.aar",
+          "url": "flipper-network-plugin-0.125.0.aar",
+          "size": 29218,
+          "sha512": "24270347e58f0b008107dc38ff8430940e0a537c19d4caa3110bf02c94fdd776544d8c48f748b2028a66b39f3d41bb8e8b0ae37de0c922c3e7f9ab76aa1758f6",
+          "sha256": "072b4a68c5fff8aacce6d77f59522d3e11200042eee4efddf392afce3972dfab",
+          "sha1": "30352de7d186a86c31368eb53675ac41fa1df659",
+          "md5": "da20eafa495d384174e3bbf90dec4fe5"
+        }
+      ]
+    },
+    {
+      "name": "releaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "com.facebook.flipper",
+          "module": "flipper",
+          "version": {
+            "requires": "0.125.0"
+          }
+        },
+        {
+          "group": "com.squareup.okhttp3",
+          "module": "okhttp",
+          "version": {
+            "requires": "4.9.3"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "flipper-network-plugin-0.125.0.aar",
+          "url": "flipper-network-plugin-0.125.0.aar",
+          "size": 29218,
+          "sha512": "24270347e58f0b008107dc38ff8430940e0a537c19d4caa3110bf02c94fdd776544d8c48f748b2028a66b39f3d41bb8e8b0ae37de0c922c3e7f9ab76aa1758f6",
+          "sha256": "072b4a68c5fff8aacce6d77f59522d3e11200042eee4efddf392afce3972dfab",
+          "sha1": "30352de7d186a86c31368eb53675ac41fa1df659",
+          "md5": "da20eafa495d384174e3bbf90dec4fe5"
+        }
+      ]
+    }
+  ]
+}

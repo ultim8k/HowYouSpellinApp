@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="GenericDraweeHierarchy">
+
+    <!-- NOTE: If adding a new attr here, also add to SimpleDraweeView below -->
+    <eat-comment/>
+
+    <!-- Fade duration in milliseconds. -->
+    <attr format="integer" name="fadeDuration"/>
+
+    <!-- Aspect ratio (width / height) of the view, not necessarily of the images. -->
+    <attr format="float" name="viewAspectRatio"/>
+
+    <!-- Image branches -
+    Scale-type values must match those in GenericDraweeHierarchyInflater.getScaleTypeFromXml.
+    (GenericDraweeHierarchyInflater.java).
+    For drawables that should not be scaled, such as those with the android:tileMode
+    attribute set, use the value 'none'. -->
+
+    <!-- A drawable or color to be be used as a placeholder. -->
+    <attr format="reference" name="placeholderImage"/>
+    <!-- Scale type of the placeholder image. Ignored if placeholderImage is not specified. -->
+    <attr name="placeholderImageScaleType">
+      <enum name="none" value="-1"/>
+      <enum name="fitXY" value="0"/>
+      <enum name="fitStart" value="1"/>
+      <enum name="fitCenter" value="2"/>
+      <enum name="fitEnd" value="3"/>
+      <enum name="center" value="4"/>
+      <enum name="centerInside" value="5"/>
+      <enum name="centerCrop" value="6"/>
+      <enum name="focusCrop" value="7"/>
+      <enum name="fitBottomStart" value="8"/>
+    </attr>
+
+    <!-- A drawable to be be used as a retry image. -->
+    <attr format="reference" name="retryImage"/>
+    <!-- Scale type of the retry image. Ignored if retryImage is not specified. -->
+    <attr name="retryImageScaleType">
+      <enum name="none" value="-1"/>
+      <enum name="fitXY" value="0"/>
+      <enum name="fitStart" value="1"/>
+      <enum name="fitCenter" value="2"/>
+      <enum name="fitEnd" value="3"/>
+      <enum name="center" value="4"/>
+      <enum name="centerInside" value="5"/>
+      <enum name="centerCrop" value="6"/>
+      <enum name="focusCrop" value="7"/>
+      <enum name="fitBottomStart" value="8"/>
+    </attr>
+
+    <!-- A drawable to be be used as a failure image. -->
+    <attr format="reference" name="failureImage"/>
+    <!-- Scale type of the failure image. Ignored if failureImage is not specified. -->
+    <attr name="failureImageScaleType">
+      <enum name="none" value="-1"/>
+      <enum name="fitXY" value="0"/>
+      <enum name="fitStart" value="1"/>
+      <enum name="fitCenter" value="2"/>
+      <enum name="fitEnd" value="3"/>
+      <enum name="center" value="4"/>
+      <enum name="centerInside" value="5"/>
+      <enum name="centerCrop" value="6"/>
+      <enum name="focusCrop" value="7"/>
+      <enum name="fitBottomStart" value="8"/>
+    </attr>
+
+    <!-- A drawable to be be used as a progress bar. -->
+    <attr format="reference" name="progressBarImage"/>
+    <!-- Scale type of the progress bar. Ignored if progressBarImage is not specified. -->
+    <attr name="progressBarImageScaleType">
+      <enum name="none" value="-1"/>
+      <enum name="fitXY" value="0"/>
+      <enum name="fitStart" value="1"/>
+      <enum name="fitCenter" value="2"/>
+      <enum name="fitEnd" value="3"/>
+      <enum name="center" value="4"/>
+      <enum name="centerInside" value="5"/>
+      <enum name="centerCrop" value="6"/>
+      <enum name="focusCrop" value="7"/>
+      <enum name="fitBottomStart" value="8"/>
+    </attr>
+    <!-- Progress bar Auto Rotate interval in milliseconds -->
+    <attr format="integer" name="progressBarAutoRotateInterval"/>
+
+    <!-- Scale type of the actual image. -->
+    <attr name="actualImageScaleType">
+      <enum name="none" value="-1"/>
+      <enum name="fitXY" value="0"/>
+      <enum name="fitStart" value="1"/>
+      <enum name="fitCenter" value="2"/>
+      <enum name="fitEnd" value="3"/>
+      <enum name="center" value="4"/>
+      <enum name="centerInside" value="5"/>
+      <enum name="centerCrop" value="6"/>
+      <enum name="focusCrop" value="7"/>
+      <enum name="fitBottomStart" value="8"/>
+    </attr>
+
+    <!-- A drawable or color to be used as a background. -->
+    <attr format="reference" name="backgroundImage"/>
+
+    <!-- A drawable or color to be used as an overlay. -->
+    <attr format="reference" name="overlayImage"/>
+
+    <!-- A drawable or color to be used as a pressed-state-overlay -->
+    <attr format="reference" name="pressedStateOverlayImage"/>
+
+    <!-- Rounding params -
+    Declares attributes for rounding shape, mode and border. -->
+
+    <!-- Round as circle. -->
+    <attr format="boolean" name="roundAsCircle"/>
+    <!-- Rounded corner radius. Ignored if roundAsCircle is used. -->
+    <attr format="dimension" name="roundedCornerRadius"/>
+    <!-- Round the top-left corner. Ignored if roundAsCircle is used. -->
+    <attr format="boolean" name="roundTopLeft"/>
+    <!-- Round the top-right corner. Ignored if roundAsCircle is used. -->
+    <attr format="boolean" name="roundTopRight"/>
+    <!-- Round the bottom-right corner. Ignored if roundAsCircle is used. -->
+    <attr format="boolean" name="roundBottomRight"/>
+    <!-- Round the bottom-left corner. Ignored if roundAsCircle is used. -->
+    <attr format="boolean" name="roundBottomLeft"/>
+    <!-- Round the top-start edge. Ignored if roundAsCircle is used. -->
+    <attr format="boolean" name="roundTopStart"/>
+    <!-- Round the top-end edge. Ignored if roundAsCircle is used. -->
+    <attr format="boolean" name="roundTopEnd"/>
+    <!-- Round the bottom-start edge. Ignored if roundAsCircle is used. -->
+    <attr format="boolean" name="roundBottomStart"/>
+    <!-- Round the bottom-end edge. Ignored if roundAsCircle is used. -->
+    <attr format="boolean" name="roundBottomEnd"/>
+    <!-- Round by overlying color. -->
+    <attr format="color" name="roundWithOverlayColor"/>
+    <!-- Rounding border width-->
+    <attr format="dimension" name="roundingBorderWidth"/>
+    <!-- Rounding border color -->
+    <attr format="color|reference" name="roundingBorderColor"/>
+    <!-- Rounding border padding -->
+    <attr format="dimension" name="roundingBorderPadding"/>
+
+  </declare-styleable>
+    <declare-styleable name="SimpleDraweeView" parent="GenericDraweeHierarchy">
+
+    <!-- An image uri . -->
+    <attr format="string" name="actualImageUri"/>
+    <!-- An image reference -->
+    <attr format="reference" name="actualImageResource"/>
+
+    <!-- Attributes inherited from GenericDraweeHierarchy -->
+    <eat-comment/>
+
+    <!-- Fade duration in milliseconds. -->
+    <attr name="fadeDuration"/>
+
+    <!-- Aspect ratio (width / height) of the view, not necessarily of the images. -->
+    <attr name="viewAspectRatio"/>
+
+    <!-- Image branches -
+    Scale-type values must match those in GenericDraweeHierarchyInflater.getScaleTypeFromXml.
+    (GenericDraweeHierarchyInflater.java).
+    For drawables that should not be scaled, such as those with the android:tileMode
+    attribute set, use the value 'none'. -->
+
+    <!-- A drawable or color to be be used as a placeholder. -->
+    <attr name="placeholderImage"/>
+    <!-- Scale type of the placeholder image. Ignored if placeholderImage is not specified. -->
+    <attr name="placeholderImageScaleType"/>
+
+    <!-- A drawable to be be used as a retry image. -->
+    <attr name="retryImage"/>
+    <!-- Scale type of the retry image. Ignored if retryImage is not specified. -->
+    <attr name="retryImageScaleType"/>
+
+    <!-- A drawable to be be used as a failure image. -->
+    <attr name="failureImage"/>
+    <!-- Scale type of the failure image. Ignored if failureImage is not specified. -->
+    <attr name="failureImageScaleType"/>
+
+
+    <!-- A drawable to be be used as a progress bar. -->
+    <attr name="progressBarImage"/>
+    <!-- Scale type of the progress bar. Ignored if progressBarImage is not specified. -->
+    <attr name="progressBarImageScaleType"/>
+
+    <!-- Progress bar Auto Rotate interval in milliseconds -->
+    <attr name="progressBarAutoRotateInterval"/>
+
+    <!-- A drawable or color to be used as a background. -->
+    <attr name="backgroundImage"/>
+
+    <!-- A drawable or color to be used as an overlay. -->
+    <attr name="overlayImage"/>
+
+    <!-- A drawable or color to be used as a pressed-state-overlay -->
+    <attr name="pressedStateOverlayImage"/>
+
+    <!-- Rounding params -
+    Declares attributes for rounding shape, mode and border. -->
+
+    <!-- Round as circle. -->
+    <attr name="roundAsCircle"/>
+    <!-- Rounded corner radius. Ignored if roundAsCircle is used. -->
+    <attr name="roundedCornerRadius"/>
+    <!-- Round the top-left corner. Ignored if roundAsCircle is used. -->
+    <attr name="roundTopLeft"/>
+    <!-- Round the top-right corner. Ignored if roundAsCircle is used. -->
+    <attr name="roundTopRight"/>
+    <!-- Round the bottom-right corner. Ignored if roundAsCircle is used. -->
+    <attr name="roundBottomRight"/>
+    <!-- Round the bottom-left corner. Ignored if roundAsCircle is used. -->
+    <attr name="roundBottomLeft"/>
+    <!-- Round the top-start edge. Ignored if roundAsCircle is used. -->
+    <attr name="roundTopStart"/>
+    <!-- Round the top-end edge. Ignored if roundAsCircle is used. -->
+    <attr name="roundTopEnd"/>
+    <!-- Round the bottom-start edge. Ignored if roundAsCircle is used. -->
+    <attr name="roundBottomStart"/>
+    <!-- Round the bottom-end edge. Ignored if roundAsCircle is used. -->
+    <attr name="roundBottomEnd"/>
+    <!-- Round by overlying color. -->
+    <attr name="roundWithOverlayColor"/>
+    <!-- Rounding border width-->
+    <attr name="roundingBorderWidth"/>
+    <!-- Rounding border color -->
+    <attr name="roundingBorderColor"/>
+    <!-- Rounding border padding -->
+    <attr name="roundingBorderPadding"/>
+
+  </declare-styleable>
+</resources>

@@ -1,0 +1,116 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../kotlinx-coroutines-core/1.4.1/kotlinx-coroutines-core-1.4.1.module",
+    "group": "org.jetbrains.kotlinx",
+    "module": "kotlinx-coroutines-core",
+    "version": "1.4.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.3",
+      "buildId": "ccrfix6k3bbjdm5g7gks5ek66u"
+    }
+  },
+  "variants": [
+    {
+      "name": "jvm-api",
+      "attributes": {
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "1.4.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-common",
+          "version": {
+            "requires": "1.4.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "kotlinx-coroutines-core-jvm-1.4.1.jar",
+          "url": "kotlinx-coroutines-core-jvm-1.4.1.jar",
+          "size": 1672388,
+          "sha512": "4ac23a526f7e4f492a105fd2660c458ed920560bd99c83518677e17920824b933d0e655934e3f875df5f27489974fae007901f65b3ff4aa5996c24b9a96d549e",
+          "sha256": "6d2f87764b6638f27aff12ed380db4b63c9d46ba55dc32683a650598fa5a3e22",
+          "sha1": "936067d1e0195f638396f60e71da745bb14a35ca",
+          "md5": "626a013216896f39f080c75cb7a4e669"
+        }
+      ]
+    },
+    {
+      "name": "jvm-runtime",
+      "attributes": {
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "1.4.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-common",
+          "version": {
+            "requires": "1.4.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "kotlinx-coroutines-core-jvm-1.4.1.jar",
+          "url": "kotlinx-coroutines-core-jvm-1.4.1.jar",
+          "size": 1672388,
+          "sha512": "4ac23a526f7e4f492a105fd2660c458ed920560bd99c83518677e17920824b933d0e655934e3f875df5f27489974fae007901f65b3ff4aa5996c24b9a96d549e",
+          "sha256": "6d2f87764b6638f27aff12ed380db4b63c9d46ba55dc32683a650598fa5a3e22",
+          "sha1": "936067d1e0195f638396f60e71da745bb14a35ca",
+          "md5": "626a013216896f39f080c75cb7a4e669"
+        }
+      ]
+    },
+    {
+      "name": "metadata-api",
+      "attributes": {
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.platform.type": "common"
+      },
+      "available-at": {
+        "url": "../../kotlinx-coroutines-core-metadata/1.4.1/kotlinx-coroutines-core-metadata-1.4.1.module",
+        "group": "org.jetbrains.kotlinx",
+        "module": "kotlinx-coroutines-core-metadata",
+        "version": "1.4.1"
+      }
+    },
+    {
+      "name": "metadata-commonMainMetadataElements",
+      "attributes": {
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.platform.type": "common"
+      },
+      "available-at": {
+        "url": "../../kotlinx-coroutines-core-metadata/1.4.1/kotlinx-coroutines-core-metadata-1.4.1.module",
+        "group": "org.jetbrains.kotlinx",
+        "module": "kotlinx-coroutines-core-metadata",
+        "version": "1.4.1"
+      }
+    }
+  ]
+}

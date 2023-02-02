@@ -1,0 +1,10 @@
+com.facebook.fresco.ui.common.BaseControllerListener2
+com.facebook.fresco.ui.common.BuildConfig
+com.facebook.fresco.ui.common.ControllerListener2
+com.facebook.fresco.ui.common.ControllerListener2$Extras
+com.facebook.fresco.ui.common.DimensionsInfo
+com.facebook.fresco.ui.common.ForwardingControllerListener2
+com.facebook.fresco.ui.common.LoggingListener
+com.facebook.fresco.ui.common.MultiUriHelper
+com.facebook.fresco.ui.common.OnDrawControllerListener
+com.facebook.fresco.ui.common.OnFadeListener

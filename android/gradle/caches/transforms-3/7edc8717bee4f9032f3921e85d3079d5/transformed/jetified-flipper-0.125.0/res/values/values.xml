@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="flipper_skip_empty_view_group_traversal" type="id"/>
+    <item name="flipper_skip_view_traversal" type="id"/>
+</resources>

@@ -1,0 +1,165 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.android.tools.build",
+    "module": "gradle-api",
+    "version": "4.2.2",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.7.1",
+      "buildId": "zz53gouv6nfztoi24j3d3xklai"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.localToProject": "public",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "com.android.tools.build",
+          "module": "builder-test-api",
+          "version": {
+            "requires": "4.2.2"
+          }
+        },
+        {
+          "group": "com.google.guava",
+          "module": "guava",
+          "version": {
+            "requires": "28.1-jre"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.4.31"
+          }
+        },
+        {
+          "group": "org.ow2.asm",
+          "module": "asm",
+          "version": {
+            "requires": "7.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "gradle-api-4.2.2.jar",
+          "url": "gradle-api-4.2.2.jar",
+          "size": 174961,
+          "sha512": "0bff0868bde1ea7662c0ad2a27d939b5887e0f5302f906eafc3bdcb2befffe508861a4748c15b8c6142b517cd6d1502bb51ff231252293be7be92115c322eefb",
+          "sha256": "dd4ef35bbbfb8fc2d20e3311c76b516bc1672e82b61cb3a59fc877da0f9b4f61",
+          "sha1": "d5f3c03d885287eb0765902bb2f9f36cce25eb6e",
+          "md5": "beab0b1a3232aa1243fb76db3286f50e"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.localToProject": "public",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "com.android.tools.build",
+          "module": "builder-test-api",
+          "version": {
+            "requires": "4.2.2"
+          }
+        },
+        {
+          "group": "com.google.guava",
+          "module": "guava",
+          "version": {
+            "requires": "28.1-jre"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.4.31"
+          }
+        },
+        {
+          "group": "org.ow2.asm",
+          "module": "asm",
+          "version": {
+            "requires": "7.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "gradle-api-4.2.2.jar",
+          "url": "gradle-api-4.2.2.jar",
+          "size": 174961,
+          "sha512": "0bff0868bde1ea7662c0ad2a27d939b5887e0f5302f906eafc3bdcb2befffe508861a4748c15b8c6142b517cd6d1502bb51ff231252293be7be92115c322eefb",
+          "sha256": "dd4ef35bbbfb8fc2d20e3311c76b516bc1672e82b61cb3a59fc877da0f9b4f61",
+          "sha1": "d5f3c03d885287eb0765902bb2f9f36cce25eb6e",
+          "md5": "beab0b1a3232aa1243fb76db3286f50e"
+        }
+      ]
+    },
+    {
+      "name": "javadocElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "gradle-api-4.2.2-javadoc.jar",
+          "url": "gradle-api-4.2.2-javadoc.jar",
+          "size": 83865,
+          "sha512": "8724d732f41f4c5b1b203b306c4cd25df57fcc73267d03b95055ebee6a71165081c57166a2d7e14880345e8c9ca2f209e81b40aa1cab16d43570f01f69155c88",
+          "sha256": "f8f12b0a56106b12762c44948710e721d5888715b2873a496b53ec11136308b1",
+          "sha1": "4236e81a53f1f8a8e9b1f2979bce1825250bd19f",
+          "md5": "91be7f3fc935bac0ad2b5f13e01bda6a"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "gradle-api-4.2.2-sources.jar",
+          "url": "gradle-api-4.2.2-sources.jar",
+          "size": 187265,
+          "sha512": "75e13287227315c9bb9342e85c2d27615888312b7e84351416af0b5331f69c4a30f3ed8849660f28392148fff60fa3bbd036d38b44eef9966bdce2200f172f50",
+          "sha256": "8b957469d2c1b4cdc527e86eb1b4a98d651d59ab0bb424e1ed23bdf64eba6831",
+          "sha1": "07738830f8f2deb4b1466638f894e460f3725a19",
+          "md5": "f368e56271a5026bba93a30d97848c40"
+        }
+      ]
+    }
+  ]
+}

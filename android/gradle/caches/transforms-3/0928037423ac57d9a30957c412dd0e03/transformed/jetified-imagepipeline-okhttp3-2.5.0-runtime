@@ -1,0 +1,7 @@
+com.facebook.imagepipeline.backends.okhttp3.BuildConfig
+com.facebook.imagepipeline.backends.okhttp3.OkHttpImagePipelineConfigFactory
+com.facebook.imagepipeline.backends.okhttp3.OkHttpNetworkFetcher
+com.facebook.imagepipeline.backends.okhttp3.OkHttpNetworkFetcher$1
+com.facebook.imagepipeline.backends.okhttp3.OkHttpNetworkFetcher$1$1
+com.facebook.imagepipeline.backends.okhttp3.OkHttpNetworkFetcher$2
+com.facebook.imagepipeline.backends.okhttp3.OkHttpNetworkFetcher$OkHttpNetworkFetchState
