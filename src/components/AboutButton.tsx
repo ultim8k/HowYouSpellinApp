@@ -3,11 +3,14 @@ import * as React from 'react';
 import {StyleSheet, Text, View, Pressable} from 'react-native';
 
 const styles = StyleSheet.create({
-  aboutButton: {
-    paddingVertical: 7,
-    paddingHorizontal: 20,
+  wrapperRow: {
+    paddingHorizontal: 10,
     flexDirection: 'row',
     justifyContent: 'flex-end',
+  },
+  button: {
+    paddingVertical: 7,
+    paddingHorizontal: 10,
   },
   text: {
     fontSize: 12,
@@ -19,9 +22,11 @@ export const AboutButton: React.FC = () => {
   const navigation = useNavigation();
 
   return (
-    <View style={styles.aboutButton}>
-      {/* @ts-ignore */}
-      <Pressable onPress={() => navigation.navigate('AboutModal')}>
+    <View style={styles.wrapperRow}>
+      <Pressable
+        style={styles.button}
+        /* @ts-ignore */
+        onPress={() => navigation.navigate('AboutModal')}>
         <Text style={styles.text}>About</Text>
       </Pressable>
     </View>
