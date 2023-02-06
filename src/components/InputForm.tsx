@@ -8,6 +8,7 @@ const styles = StyleSheet.create({
     padding: 10,
     marginBottom: 15,
     backgroundColor: '#ffffff',
+    borderRadius: 3,
   },
   switchBoxLine: {
     marginBottom: 20,
@@ -39,6 +40,7 @@ export const InputForm: React.FC<InputFormProps> = ({
       <TextInput
         style={styles.textInput}
         placeholder="Type some text"
+        placeholderTextColor="#777"
         defaultValue={text}
         onChangeText={handleTextChange}
         autoFocus={true}
