@@ -3,7 +3,7 @@ import {NavigationContainer} from '@react-navigation/native';
 import {ListOrientationProvider} from './hooks/useListOrientation';
 import {RootNavigator} from './screens/Root.Navigator';
 
-const App: React.FC = () => (
+const App = (): JSX.Element => (
   <NavigationContainer>
     <ListOrientationProvider>
       <RootNavigator />
