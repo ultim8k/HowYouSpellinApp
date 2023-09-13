@@ -1,5 +1,15 @@
 import * as React from 'react';
-import {TouchableOpacity, StyleSheet, Text, View, Linking} from 'react-native';
+import {
+  Appearance,
+  TouchableOpacity,
+  StyleSheet,
+  Text,
+  View,
+  Linking,
+} from 'react-native';
+import {personalWebsiteLink} from '../constants/links';
+import {colors} from '../constants/colors';
+import {fontSizes} from '../constants/fontSizes';
 
 const styles = StyleSheet.create({
   madeBy: {
@@ -8,35 +18,51 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'center',
     borderBottomWidth: 1,
-    borderBottomColor: '#999999',
+    borderBottomColor: colors.gray,
     marginBottom: 20,
     marginHorizontal: 20,
   },
   text: {
-    fontSize: 14,
-    color: '#333333',
+    fontSize: fontSizes.medium,
+    color: colors.darkGray,
   },
   link: {
-    color: '#e07d13',
+    color: colors.orange,
   },
   heart: {
-    color: '#ce2029',
+    color: colors.red,
+  },
+  textDark: {
+    color: colors.light,
+  },
+  textLight: {
+    color: colors.black,
   },
 });
 
 const handleLinkPress = (): void => {
-  Linking.openURL('https://kostas.rocks');
+  Linking.openURL(personalWebsiteLink);
 };
 
-export const MadeBy: React.FC = () => (
-  <View style={styles.madeBy}>
-    <Text style={styles.text}>Made with </Text>
-    <Text style={StyleSheet.flatten([styles.text, styles.heart])}>
-      &#9829;{' '}
-    </Text>
-    <Text style={styles.text}>by </Text>
-    <TouchableOpacity onPress={handleLinkPress}>
-      <Text style={StyleSheet.flatten([styles.text, styles.link])}>Kostas</Text>
-    </TouchableOpacity>
-  </View>
-);
+export const MadeBy: React.FC = () => {
+  const colorScheme = Appearance.getColorScheme();
+  const textColorStyle =
+    colorScheme === 'dark' ? styles.textDark : styles.textLight;
+
+  const heartChar = String.fromCharCode(9829);
+
+  return (
+    <View style={styles.madeBy}>
+      <Text style={[styles.text, textColorStyle]}>Made with </Text>
+      <Text style={StyleSheet.flatten([styles.text, styles.heart])}>
+        {heartChar}
+      </Text>
+      <Text style={[styles.text, textColorStyle]}> by </Text>
+      <TouchableOpacity onPress={handleLinkPress}>
+        <Text style={StyleSheet.flatten([styles.text, styles.link])}>
+          Kostas
+        </Text>
+      </TouchableOpacity>
+    </View>
+  );
+};

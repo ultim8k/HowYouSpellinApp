@@ -3,6 +3,7 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
 import {About} from './About';
 import {Home} from './Home';
+import {colors} from '../constants/colors';
 
 const RootStack = createNativeStackNavigator();
 
@@ -20,6 +21,9 @@ export const RootNavigator: React.FC = () => {
         options={() => ({
           presentation: 'modal',
           title: 'About',
+          headerStyle: {
+            backgroundColor: colors.orange,
+          },
         })}
       />
     </RootStack.Navigator>

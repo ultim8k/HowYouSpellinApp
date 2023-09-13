@@ -1,20 +1,27 @@
 import React, {useState} from 'react';
-import {SafeAreaView, StyleSheet, Text, View} from 'react-native';
+import {Appearance, SafeAreaView, StyleSheet, Text, View} from 'react-native';
 
 import {SpellWords} from '../components/SpellWords';
 import {InputForm} from '../components/InputForm';
 
 import {replaceCharWithSpellWord} from '../utils';
 import {AboutButton} from '../components/AboutButton';
+import {colors} from '../constants/colors';
+import {fontSizes} from '../constants/fontSizes';
 
 const styles = StyleSheet.create({
   app: {
-    backgroundColor: '#eaeaea',
     display: 'flex',
     flexGrow: 1,
     height: '100%',
     width: '100%',
     maxWidth: '100%',
+  },
+  appLight: {
+    backgroundColor: colors.light,
+  },
+  appDark: {
+    backgroundColor: colors.dark,
   },
   header: {
     marginVertical: 20,
@@ -22,7 +29,7 @@ const styles = StyleSheet.create({
   },
   title: {
     fontWeight: 'bold',
-    fontSize: 25,
+    fontSize: fontSizes.xlarge,
     marginVertical: 10,
     textAlign: 'center',
   },
@@ -32,6 +39,12 @@ const styles = StyleSheet.create({
   aboutButton: {
     textAlign: 'right',
   },
+  textDark: {
+    color: colors.light,
+  },
+  textLight: {
+    color: colors.black,
+  },
 });
 
 export const Home: React.FC = () => {
@@ -39,13 +52,19 @@ export const Home: React.FC = () => {
   /* @ts-ignore */
   const spellWords = text.toUpperCase().split('').map(replaceCharWithSpellWord);
   const handleTextChange = (inputText: string): void => setText(inputText);
+  const colorScheme = Appearance.getColorScheme();
+
+  const appColorStyle =
+    colorScheme === 'dark' ? styles.appDark : styles.appLight;
+  const textColorStyle =
+    colorScheme === 'dark' ? styles.textDark : styles.textLight;
 
   return (
-    <SafeAreaView style={styles.app}>
+    <SafeAreaView style={[styles.app, appColorStyle]}>
       <AboutButton />
       <View style={styles.header}>
-        <Text style={styles.title}>How you spellin?</Text>
-        <Text style={styles.description}>
+        <Text style={[styles.title, textColorStyle]}>How you spellin?</Text>
+        <Text style={[styles.description, textColorStyle]}>
           Convert text to spell words using the International Radiotelephony
           Spelling Alphabet.
         </Text>

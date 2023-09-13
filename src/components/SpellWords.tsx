@@ -8,6 +8,7 @@ import {
   KeyboardAwareFlatList,
   KeyboardAwareScrollView,
 } from 'react-native-keyboard-aware-scroll-view';
+import {colors} from '../constants/colors';
 
 const styles = StyleSheet.create({
   container: {
@@ -15,6 +16,7 @@ const styles = StyleSheet.create({
     maxWidth: '100%',
     justifyContent: 'center',
     alignItems: 'center',
+    paddingHorizontal: 10,
   },
   listVertical: {
     textAlign: 'center',
@@ -43,7 +45,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   breakText: {
-    color: '#777777',
+    color: colors.gray,
     textAlign: 'center',
   },
 });
