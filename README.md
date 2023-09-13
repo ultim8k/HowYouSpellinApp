@@ -47,4 +47,5 @@ This is one way to run your app — you can also run it directly from within And
 
 - Ship to Play Store
 - Add favourites
-- Add dark mode
+- Add GPS reading to spell out location on emergencies
+- Add automated screenshots with Detox and fastlane
