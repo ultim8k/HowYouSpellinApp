@@ -1,14 +1,29 @@
 import React from 'react';
-import {StyleSheet, Switch, Text, TextInput, View} from 'react-native';
+import {
+  Appearance,
+  StyleSheet,
+  Switch,
+  Text,
+  TextInput,
+  View,
+} from 'react-native';
 
 import {useListOrientation} from '../hooks/useListOrientation';
+import {colors} from '../constants/colors';
 
 const styles = StyleSheet.create({
   textInput: {
     padding: 10,
     marginBottom: 15,
-    backgroundColor: '#ffffff',
     borderRadius: 3,
+  },
+  textInputDark: {
+    backgroundColor: colors.darker,
+    color: colors.light,
+  },
+  textInputLight: {
+    backgroundColor: colors.white,
+    color: colors.black,
   },
   switchBoxLine: {
     marginBottom: 20,
@@ -22,6 +37,12 @@ const styles = StyleSheet.create({
   formWrapper: {
     padding: 20,
   },
+  textDark: {
+    color: colors.light,
+  },
+  textLight: {
+    color: colors.black,
+  },
 });
 
 interface InputFormProps {
@@ -34,19 +55,25 @@ export const InputForm: React.FC<InputFormProps> = ({
   handleTextChange,
 }) => {
   const {isHorizontal, changeListOrientation} = useListOrientation();
+  const colorScheme = Appearance.getColorScheme();
+
+  const textInputColorStyle =
+    colorScheme === 'dark' ? styles.textInputDark : styles.textInputLight;
+  const textColorStyle =
+    colorScheme === 'dark' ? styles.textDark : styles.textLight;
 
   return (
     <View style={styles.formWrapper}>
       <TextInput
-        style={styles.textInput}
+        style={[styles.textInput, textInputColorStyle]}
         placeholder="Type some text"
-        placeholderTextColor="#777"
+        placeholderTextColor={colors.gray}
         defaultValue={text}
         onChangeText={handleTextChange}
         autoFocus={true}
       />
       <View style={styles.switchBoxLine}>
-        <Text>Display words vertically?</Text>
+        <Text style={textColorStyle}>Display words vertically?</Text>
         <Switch
           style={styles.switchBox}
           onValueChange={changeListOrientation}

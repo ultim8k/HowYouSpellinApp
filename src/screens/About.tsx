@@ -1,33 +1,56 @@
 import React from 'react';
-import {Linking, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
+import {
+  Appearance,
+  Linking,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View,
+} from 'react-native';
 import {MadeBy} from '../components/MadeBy';
+import {webappLink, legalLink, githubLink} from '../constants/links';
+import {colors} from '../constants/colors';
+import {fontSizes} from '../constants/fontSizes';
 
 const styles = StyleSheet.create({
   text: {
     textAlign: 'center',
-    fontSize: 14,
-    color: '#4f4fb0',
+    fontSize: fontSizes.medium,
+    color: colors.purple,
   },
   link: {
     marginBottom: 5,
   },
+  container: {
+    flex: 1,
+  },
+  containerDark: {
+    backgroundColor: colors.dark,
+  },
+  containerLight: {
+    backgroundColor: colors.light,
+  },
 });
 
 const handleWebappLinkPress = (): void => {
-  Linking.openURL('https://how-you-spell.in');
+  Linking.openURL(webappLink);
 };
 
 const handleLegalLinkPress = (): void => {
-  Linking.openURL('https://how-you-spell.in/about/privacy-policy');
+  Linking.openURL(legalLink);
 };
 
 const handleGithubLinkPress = (): void => {
-  Linking.openURL('https://github.com/ultim8k/HowYouSpellinApp');
+  Linking.openURL(githubLink);
 };
 
 export const About: React.FC = () => {
+  const colorScheme = Appearance.getColorScheme();
+  const containerColorStyle =
+    colorScheme === 'dark' ? styles.containerDark : styles.containerLight;
+
   return (
-    <View>
+    <View style={[styles.container, containerColorStyle]}>
       <MadeBy />
       <TouchableOpacity onPress={handleWebappLinkPress}>
         <View style={styles.link}>

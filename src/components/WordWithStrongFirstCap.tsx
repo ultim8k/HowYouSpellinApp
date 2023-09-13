@@ -1,6 +1,7 @@
 import * as React from 'react';
-import {StyleSheet, Text} from 'react-native';
+import {Appearance, StyleSheet, Text} from 'react-native';
 import {useListOrientation} from '../hooks/useListOrientation';
+import {colors} from '../constants/colors';
 
 const styles = StyleSheet.create({
   textWrapperVertical: {
@@ -8,6 +9,12 @@ const styles = StyleSheet.create({
   },
   strong: {
     fontWeight: '600',
+  },
+  textDark: {
+    color: colors.light,
+  },
+  textLight: {
+    color: colors.black,
   },
 });
 
@@ -21,9 +28,12 @@ export const WordWithStrongFirstCap: React.FC<WordWithStrongFirstCapProps> = ({
   const [first, ...rest] = text.trim()?.split('');
   const {isHorizontal} = useListOrientation();
   const textStyle = !isHorizontal && styles.textWrapperVertical;
+  const colorScheme = Appearance.getColorScheme();
+  const textColorStyle =
+    colorScheme === 'dark' ? styles.textDark : styles.textLight;
 
   return (
-    <Text style={textStyle}>
+    <Text style={[textStyle, textColorStyle]}>
       <Text style={styles.strong}>{first}</Text>
       <Text>{rest}</Text>
     </Text>

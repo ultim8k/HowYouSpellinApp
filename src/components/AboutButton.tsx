@@ -1,6 +1,8 @@
 import {useNavigation} from '@react-navigation/native';
 import * as React from 'react';
-import {StyleSheet, Text, View, Pressable} from 'react-native';
+import {StyleSheet, Text, View, Pressable, Appearance} from 'react-native';
+import {colors} from '../constants/colors';
+import {fontSizes} from '../constants/fontSizes';
 
 const styles = StyleSheet.create({
   wrapperRow: {
@@ -13,13 +15,22 @@ const styles = StyleSheet.create({
     paddingHorizontal: 10,
   },
   text: {
-    fontSize: 12,
-    color: '#333333',
+    fontSize: fontSizes.small,
+    color: colors.darkGray,
+  },
+  textDark: {
+    color: colors.lightGray,
+  },
+  textLight: {
+    color: colors.darkGray,
   },
 });
 
 export const AboutButton: React.FC = () => {
   const navigation = useNavigation();
+  const colorScheme = Appearance.getColorScheme();
+  const textColorStyle =
+    colorScheme === 'dark' ? styles.textDark : styles.textLight;
 
   return (
     <View style={styles.wrapperRow}>
@@ -27,7 +38,7 @@ export const AboutButton: React.FC = () => {
         style={styles.button}
         /* @ts-ignore */
         onPress={() => navigation.navigate('AboutModal')}>
-        <Text style={styles.text}>About</Text>
+        <Text style={[styles.text, textColorStyle]}>About</Text>
       </Pressable>
     </View>
   );
