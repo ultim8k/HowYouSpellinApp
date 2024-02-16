@@ -2,7 +2,7 @@ import * as React from 'react';
 
 type ListOrientation = 'horizontal' | 'vertical';
 const ListOrientationContext = React.createContext<{
-  changeListOrientation?: () => void;
+  changeListOrientation: () => void;
   isHorizontal: boolean;
 }>({
   changeListOrientation: () => {},
@@ -13,7 +13,7 @@ export const useListOrientation = () =>
   React.useContext(ListOrientationContext);
 
 interface ListOrientationProviderProps {
-  children: JSX.Element;
+  children: React.JSX.Element;
 }
 
 export const ListOrientationProvider: React.FC<
@@ -22,20 +22,19 @@ export const ListOrientationProvider: React.FC<
   const [listOrientation, setListOrientation] =
     React.useState<ListOrientation>('horizontal');
 
-  const changeListOrientation = (): void => {
-    const nextOrientation: ListOrientation =
-      listOrientation === 'horizontal' ? 'vertical' : 'horizontal';
-    setListOrientation(nextOrientation);
-  };
+  const defaultContext = React.useMemo(() => {
+    const isHorizontal = listOrientation === 'horizontal';
+    const changeListOrientation = (): void => {
+      const nextOrientation: ListOrientation =
+        listOrientation === 'horizontal' ? 'vertical' : 'horizontal';
+      setListOrientation(nextOrientation);
+    };
 
-  const isHorizontal = listOrientation === 'horizontal';
+    return {changeListOrientation, isHorizontal};
+  }, [listOrientation]);
 
   return (
-    <ListOrientationContext.Provider
-      value={{
-        changeListOrientation,
-        isHorizontal,
-      }}>
+    <ListOrientationContext.Provider value={defaultContext}>
       {children}
     </ListOrientationContext.Provider>
   );

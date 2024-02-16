@@ -1,41 +1,34 @@
 import React from 'react';
-import {
-  Appearance,
-  StyleSheet,
-  Switch,
-  Text,
-  TextInput,
-  View,
-} from 'react-native';
+import {StyleSheet, TextInput, View} from 'react-native';
 
-import {useListOrientation} from '../hooks/useListOrientation';
 import {colors} from '../constants/colors';
+import {AddToFavouritesButton} from './AddToFavouritesButton';
+import {useTheme} from '../hooks/useTheme';
 
 const styles = StyleSheet.create({
+  inputContainer: {
+    borderRadius: 3,
+    flexDirection: 'row',
+    alignItems: 'center',
+    paddingRight: 7,
+    gap: 3,
+  },
+  inputContainerDark: {
+    backgroundColor: colors.darker,
+  },
+  inputContainerLight: {
+    backgroundColor: colors.white,
+  },
   textInput: {
     padding: 10,
-    marginBottom: 15,
-    borderRadius: 3,
+    paddingRight: 3,
+    flex: 1,
   },
   textInputDark: {
-    backgroundColor: colors.darker,
     color: colors.light,
   },
   textInputLight: {
-    backgroundColor: colors.white,
     color: colors.black,
-  },
-  switchBoxLine: {
-    marginBottom: 20,
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-  },
-  switchBox: {
-    transform: [{scaleX: 0.7}, {scaleY: 0.7}],
-  },
-  formWrapper: {
-    padding: 20,
   },
   textDark: {
     color: colors.light,
@@ -44,6 +37,13 @@ const styles = StyleSheet.create({
     color: colors.black,
   },
 });
+
+const getSchemeColorStyles = (isDark: boolean) => {
+  return {
+    text: isDark ? styles.textInputDark : styles.textInputLight,
+    container: isDark ? styles.inputContainerDark : styles.inputContainerLight,
+  };
+};
 
 interface InputFormProps {
   text: string;
@@ -54,32 +54,22 @@ export const InputForm: React.FC<InputFormProps> = ({
   text,
   handleTextChange,
 }) => {
-  const {isHorizontal, changeListOrientation} = useListOrientation();
-  const colorScheme = Appearance.getColorScheme();
-
-  const textInputColorStyle =
-    colorScheme === 'dark' ? styles.textInputDark : styles.textInputLight;
-  const textColorStyle =
-    colorScheme === 'dark' ? styles.textDark : styles.textLight;
+  const {isDark} = useTheme();
+  const schemeStyles = getSchemeColorStyles(isDark);
 
   return (
-    <View style={styles.formWrapper}>
+    <View style={[styles.inputContainer, schemeStyles.container]}>
       <TextInput
-        style={[styles.textInput, textInputColorStyle]}
+        style={[styles.textInput, schemeStyles.text]}
         placeholder="Type some text"
         placeholderTextColor={colors.gray}
         defaultValue={text}
         onChangeText={handleTextChange}
         autoFocus={true}
+        autoComplete="name"
+        // clearButtonMode="while-editing" // iOS only - perhaps need to move the favourite button somewhere else
       />
-      <View style={styles.switchBoxLine}>
-        <Text style={textColorStyle}>Display words vertically?</Text>
-        <Switch
-          style={styles.switchBox}
-          onValueChange={changeListOrientation}
-          value={!isHorizontal}
-        />
-      </View>
+      <AddToFavouritesButton text={text} />
     </View>
   );
 };
