@@ -1,6 +1,9 @@
-import {charsMap, type CharsMap} from '../constants/charsMap';
+export {replaceCharWithSpellWord, isBreak} from './text';
 
-export const replaceCharWithSpellWord = (char: keyof CharsMap): string =>
-  charsMap[char] || 'N/A';
-
-export const isBreak = (word: string): boolean => word === charsMap[' '];
+export {
+  getFavourites,
+  getFavouriteByKey,
+  addFavourite,
+  deleteFavouriteByKey,
+  deleteAllFavourites,
+} from './favourites';

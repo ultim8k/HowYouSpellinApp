@@ -1,13 +1,17 @@
-import React, {useState} from 'react';
-import {Appearance, SafeAreaView, StyleSheet, Text, View} from 'react-native';
+import React from 'react';
+import {SafeAreaView, StyleSheet, View} from 'react-native';
 
 import {SpellWords} from '../components/SpellWords';
 import {InputForm} from '../components/InputForm';
 
 import {replaceCharWithSpellWord} from '../utils';
-import {AboutButton} from '../components/AboutButton';
-import {colors} from '../constants/colors';
 import {fontSizes} from '../constants/fontSizes';
+import {type CharsMap} from '../constants/charsMap';
+import {useTheme} from '../hooks/useTheme';
+import {FavouritesPills} from '../components/FavouritesPills';
+import {useInputBarPosition} from '../hooks/useInputBarPosition';
+import {Intro} from '../components/Intro';
+import {useInputText} from '../hooks/useInputText';
 
 const styles = StyleSheet.create({
   app: {
@@ -17,60 +21,68 @@ const styles = StyleSheet.create({
     width: '100%',
     maxWidth: '100%',
   },
-  appLight: {
-    backgroundColor: colors.light,
-  },
-  appDark: {
-    backgroundColor: colors.dark,
-  },
-  header: {
+  welcomeContent: {
     marginVertical: 20,
-    paddingHorizontal: 20,
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    // flex: 1,
+  },
+  contentContainer: {
+    paddingVertical: 15,
+    paddingHorizontal: 15,
+    display: 'flex',
+    flex: 1,
   },
   title: {
     fontWeight: 'bold',
     fontSize: fontSizes.xlarge,
-    marginVertical: 10,
+    marginBottom: 10,
     textAlign: 'center',
   },
   description: {
     textAlign: 'center',
+    marginBottom: 20,
   },
-  aboutButton: {
-    textAlign: 'right',
-  },
-  textDark: {
-    color: colors.light,
-  },
-  textLight: {
-    color: colors.black,
+  topMenu: {
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    paddingVertical: 10,
   },
 });
 
 export const Home: React.FC = () => {
-  const [text, setText] = useState<string>('');
-  /* @ts-ignore */
-  const spellWords = text.toUpperCase().split('').map(replaceCharWithSpellWord);
-  const handleTextChange = (inputText: string): void => setText(inputText);
-  const colorScheme = Appearance.getColorScheme();
+  const {isBottom} = useInputBarPosition();
+  const {text, updateInputText} = useInputText();
+  const spellWords = text
+    .toUpperCase()
+    .split('')
+    .map(char => replaceCharWithSpellWord(char as keyof CharsMap));
+  const handleTextChange = (inputText: string): void =>
+    updateInputText(inputText);
+  const {isDark, styles: themeStyles} = useTheme();
 
-  const appColorStyle =
-    colorScheme === 'dark' ? styles.appDark : styles.appLight;
-  const textColorStyle =
-    colorScheme === 'dark' ? styles.textDark : styles.textLight;
+  console.log('isDark', isDark);
 
   return (
-    <SafeAreaView style={[styles.app, appColorStyle]}>
-      <AboutButton />
-      <View style={styles.header}>
-        <Text style={[styles.title, textColorStyle]}>How you spellin?</Text>
-        <Text style={[styles.description, textColorStyle]}>
-          Convert text to spell words using the International Radiotelephony
-          Spelling Alphabet.
-        </Text>
+    <SafeAreaView style={[styles.app, themeStyles.backgroundPrimary]}>
+      <View style={styles.contentContainer}>
+        {!isBottom && (
+          <InputForm text={text} handleTextChange={handleTextChange} />
+        )}
+        {text ? (
+          <SpellWords words={spellWords} />
+        ) : (
+          <View style={styles.welcomeContent}>
+            <Intro />
+            <FavouritesPills />
+          </View>
+        )}
+        {isBottom && (
+          <InputForm text={text} handleTextChange={handleTextChange} />
+        )}
       </View>
-      <InputForm text={text} handleTextChange={handleTextChange} />
-      <SpellWords words={spellWords} />
     </SafeAreaView>
   );
 };

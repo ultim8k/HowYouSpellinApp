@@ -9,6 +9,7 @@ import {
   KeyboardAwareScrollView,
 } from 'react-native-keyboard-aware-scroll-view';
 import {colors} from '../constants/colors';
+import {useZebraList} from '../hooks/useZebraList';
 
 const styles = StyleSheet.create({
   container: {
@@ -16,16 +17,15 @@ const styles = StyleSheet.create({
     maxWidth: '100%',
     justifyContent: 'center',
     alignItems: 'center',
-    paddingHorizontal: 10,
+    borderRadius: 3,
   },
   listVertical: {
     textAlign: 'center',
-    listStyle: 'none',
     width: '100%',
     marginVertical: 0,
     marginHorizontal: 'auto',
   },
-  contentContainer: {
+  scrollViewContentContainer: {
     flexDirection: 'row',
     flexWrap: 'wrap',
     justifyContent: 'center',
@@ -34,6 +34,18 @@ const styles = StyleSheet.create({
     padding: 10,
     height: 38,
     letterSpacing: 0.6,
+  },
+  itemZebraOdd: {
+    backgroundColor: colors.lighterGray,
+  },
+  itemZebraOddText: {
+    color: colors.darkGray,
+  },
+  itemZebraEven: {
+    backgroundColor: colors.darkGray,
+  },
+  itemZebraEvenText: {
+    color: colors.lighterGray,
   },
   itemVertical: {
     flex: 1,
@@ -52,11 +64,25 @@ const styles = StyleSheet.create({
 
 interface ItemProps {
   word: string;
+  index: number;
 }
 
-const Item: React.FC<ItemProps> = ({word}) => {
+const Item: React.FC<ItemProps> = ({word, index}) => {
   const {isHorizontal} = useListOrientation();
   const textItemStyle = !isHorizontal && styles.itemVertical;
+  const {isZebraListEnabled} = useZebraList();
+
+  const zebraBoxStyle = isZebraListEnabled
+    ? index % 2 === 0
+      ? styles.itemZebraOdd
+      : styles.itemZebraEven
+    : {};
+
+  const zebraTextStyle = isZebraListEnabled
+    ? index % 2 === 0
+      ? styles.itemZebraOddText
+      : styles.itemZebraEvenText
+    : {};
 
   if (isBreak(word)) {
     return (
@@ -67,13 +93,23 @@ const Item: React.FC<ItemProps> = ({word}) => {
   }
 
   return (
-    <View style={StyleSheet.flatten([styles.item, textItemStyle])}>
-      <WordWithStrongFirstCap text={word} />
+    <View
+      style={StyleSheet.flatten([styles.item, textItemStyle, zebraBoxStyle])}>
+      <WordWithStrongFirstCap text={word} style={zebraTextStyle} />
     </View>
   );
 };
 
-const renderItem = ({item}: {item: string}) => <Item word={item} />;
+const renderVerticalListItem = ({
+  item,
+  index,
+}: {
+  item: string;
+  index: number;
+}) => <Item word={item} index={index} />;
+const renderHorizontalListItem = (word: string, index: number) => (
+  <Item word={word} index={index} key={`${index} ${word}`} />
+);
 
 interface SpellWordsProps {
   words: string[];
@@ -86,10 +122,8 @@ export const SpellWords = ({words}: SpellWordsProps) => {
     return (
       <View style={styles.container}>
         <KeyboardAwareScrollView
-          contentContainerStyle={styles.contentContainer}>
-          {words.map((word, index) => (
-            <Item word={word} key={`${index} ${word}`} />
-          ))}
+          contentContainerStyle={styles.scrollViewContentContainer}>
+          {words.map(renderHorizontalListItem)}
         </KeyboardAwareScrollView>
       </View>
     );
@@ -100,7 +134,7 @@ export const SpellWords = ({words}: SpellWordsProps) => {
       <KeyboardAwareFlatList
         style={styles.listVertical}
         data={words}
-        renderItem={renderItem}
+        renderItem={renderVerticalListItem}
         keyExtractor={(word, index) => `${index} ${word}`}
         horizontal={false}
       />
