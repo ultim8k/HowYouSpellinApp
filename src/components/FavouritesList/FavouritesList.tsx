@@ -1,17 +1,12 @@
 import React from 'react';
-import {
-  // Alert,
-  StyleSheet,
-  View,
-  FlatList,
-} from 'react-native';
+import {StyleSheet, View, FlatList} from 'react-native';
 
 import {useInputText} from '../../hooks/useInputText';
 import {fontSizes} from '../../constants/fontSizes';
 import {colors} from '../../constants/colors';
 
 import {FavouritesItem} from './FavouritesItem';
-import {getFavouritesWithContent} from '../../utils/favourites';
+import {FavouriteWithContent} from '../../types';
 
 const styles = StyleSheet.create({
   text: {
@@ -24,38 +19,30 @@ const styles = StyleSheet.create({
     marginBottom: 5,
   },
   listContainer: {
+    flex: 1,
     textAlign: 'center',
     width: '100%',
     marginVertical: 0,
     marginHorizontal: 'auto',
-    paddingTop: 20,
-    paddingBottom: 20,
     gap: 10,
     justifyContent: 'center',
-    // marginBottom: 10,
   },
 });
 
 interface FavouritesListProps {
+  favourites: FavouriteWithContent[];
   onInsertCallback: (text?: string) => void;
+  onDeleteCallback: (title: string) => void;
+  isEditMode?: boolean;
 }
 
-export const FavouritesList = ({onInsertCallback}: FavouritesListProps) => {
-  const [favourites, setFavourites] = React.useState<
-    {
-      title: string;
-      text: string;
-    }[]
-  >([]);
+export const FavouritesList = ({
+  favourites,
+  onInsertCallback,
+  onDeleteCallback,
+  isEditMode,
+}: FavouritesListProps) => {
   const {updateInputText} = useInputText();
-
-  React.useEffect(() => {
-    const fetchFavourites = async () => {
-      const items = await getFavouritesWithContent();
-      setFavourites(items);
-    };
-    fetchFavourites();
-  }, []);
 
   const handleItemInsertPress = async (text: string): Promise<void> => {
     updateInputText(text);
@@ -71,6 +58,8 @@ export const FavouritesList = ({onInsertCallback}: FavouritesListProps) => {
             title={item.title}
             text={item.text}
             onInsertPress={() => handleItemInsertPress(item.text)}
+            onDeletePress={() => onDeleteCallback(item.title)}
+            isEditMode={isEditMode}
           />
         )}
         horizontal={false}

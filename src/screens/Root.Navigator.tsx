@@ -7,12 +7,9 @@ import {Home} from './Home';
 import {Favourites} from './Favourites';
 
 import {colors} from '../constants/colors';
-// import {VisitFavouritesButton} from '../components/VisitFavouritesButton';
-// import {VisitAboutButton} from '../components/VisitAboutButton';
 import {HeaderPopupMenu} from '../components/HeaderPopupMenu';
 import {Settings} from './Settings';
 import {useTheme} from '../hooks/useTheme';
-// import {fontSizes} from '../constants/fontSizes';
 
 const RootStack = createNativeStackNavigator();
 
@@ -28,7 +25,6 @@ export const RootNavigator: React.FC = () => {
         name="Home"
         component={Home}
         options={{
-          // headerTitle: '',
           title: 'How you spellin?',
           headerTintColor: headerTintColor,
           headerRight: HeaderPopupMenu,

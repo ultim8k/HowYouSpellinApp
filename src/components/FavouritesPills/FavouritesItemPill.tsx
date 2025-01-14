@@ -46,6 +46,8 @@ export const FavouritesItemPill: React.FC<FavouritesItemPillProps> = ({
 }) => {
   const {styles: themeStyles} = useTheme();
 
+  const visibleLabel = label.length > 10 ? `${label.slice(0, 10)}...` : label;
+
   if (isEditMode && handleDelete) {
     return (
       <View style={[styles.pill, themeStyles.backgroundTertiary]}>
@@ -54,7 +56,9 @@ export const FavouritesItemPill: React.FC<FavouritesItemPillProps> = ({
             styles.pillContentContainer,
             styles.pillContentContainerWithIcon,
           ]}>
-          <Text style={[styles.text, themeStyles.textPrimary]}>{label}</Text>
+          <Text style={[styles.text, themeStyles.textPrimary]}>
+            {visibleLabel}
+          </Text>
           <TouchableOpacity onPress={() => handleDelete(id)}>
             <Text style={[styles.text, styles.icon]}>&times;</Text>
           </TouchableOpacity>
@@ -67,7 +71,9 @@ export const FavouritesItemPill: React.FC<FavouritesItemPillProps> = ({
     <TouchableOpacity onPress={() => handlePress(id)}>
       <View style={[styles.pill, themeStyles.backgroundTertiary]}>
         <View style={styles.pillContentContainer}>
-          <Text style={[styles.text, themeStyles.textPrimary]}>{label}</Text>
+          <Text style={[styles.text, themeStyles.textPrimary]}>
+            {visibleLabel}
+          </Text>
         </View>
       </View>
     </TouchableOpacity>
