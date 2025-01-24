@@ -75,11 +75,11 @@ def jscFlavor = 'org.webkit:android-jsc:+'
 android {
     ndkVersion rootProject.ext.ndkVersion
     buildToolsVersion rootProject.ext.buildToolsVersion
-    compileSdkVersion rootProject.ext.compileSdkVersion
+    compileSdk rootProject.ext.compileSdkVersion
 
-    namespace "rocks.kostas.app.HowYouSpellinApp"
+    namespace "com.howyouspellinapp"
     defaultConfig {
-        applicationId "rocks.kostas.app.HowYouSpellinApp"
+        applicationId "com.howyouspellinapp"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
