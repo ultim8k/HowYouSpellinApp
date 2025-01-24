@@ -30,10 +30,13 @@ const styles = StyleSheet.create({
   headerWrapper: {
     padding: 20,
   },
+  deleteAllButtonWrapper: {
+    minHeight: 30,
+  },
 });
 
-const handleClearAllWithCaution = (): void => {
-  Alert.alert(
+const handleClearAllWithCaution = async (): Promise<void> => {
+  return Alert.alert(
     'Delete all items',
     'Are you sure you want to delete all favourites? This cannot be reversed.',
     [
@@ -43,14 +46,16 @@ const handleClearAllWithCaution = (): void => {
       },
       {
         text: 'Delete',
-        onPress: () => deleteAllFavourites(true),
+        onPress: () => {
+          deleteAllFavourites(true);
+        },
       },
     ],
   );
 };
 
-const handleDeleteItemWithCaution = (title: string): void => {
-  Alert.alert(
+const handleDeleteItemWithCaution = async (title: string): Promise<void> => {
+  return Alert.alert(
     'Delete item',
     `Are you sure you want to delete "${title}"? This cannot be reversed.`,
     [
@@ -60,7 +65,9 @@ const handleDeleteItemWithCaution = (title: string): void => {
       },
       {
         text: 'Delete',
-        onPress: () => deleteFavouriteByKey(title),
+        onPress: () => {
+          deleteFavouriteByKey(title);
+        },
       },
     ],
   );
@@ -113,17 +120,15 @@ export const Favourites = ({navigation}: FavouritesProps) => {
           toggleSetting={handleToggleEditMode}
         />
 
-        {isEditMode && (
-          <View>
-            {favourites.length > 0 && (
-              <TouchableOpacity onPress={handleClearAllPress}>
-                <View style={styles.button}>
-                  <Text style={styles.actionText}>Delete all favorites</Text>
-                </View>
-              </TouchableOpacity>
-            )}
-          </View>
-        )}
+        <View style={styles.deleteAllButtonWrapper}>
+          {isEditMode && favourites.length > 0 && (
+            <TouchableOpacity onPress={handleClearAllPress}>
+              <View style={styles.button}>
+                <Text style={styles.actionText}>Delete all favorites</Text>
+              </View>
+            </TouchableOpacity>
+          )}
+        </View>
       </View>
       <FavouritesList
         favourites={favourites}

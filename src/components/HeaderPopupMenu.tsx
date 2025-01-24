@@ -18,20 +18,19 @@ export const HeaderPopupMenu: React.FC = () => {
 
         if (key === 'about') {
           /* @ts-ignore */
-          navigation.navigate('AboutModal');
+          navigation.navigate('About Modal');
           return;
         }
 
         if (key === 'favourites') {
           /* @ts-ignore */
-          navigation.navigate('FavouritesModal');
+          navigation.navigate('Favourites Modal');
           return;
         }
 
         if (key === 'settings') {
           /* @ts-ignore */
-          navigation.navigate('SettingsModal');
-          return;
+          navigation.navigate('Settings Modal');
         }
       }}
       dropdownMenuMode={true}>

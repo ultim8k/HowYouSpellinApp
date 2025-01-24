@@ -52,7 +52,7 @@ const styles = StyleSheet.create({
   },
 });
 
-export const Home: React.FC = () => {
+export const HomeScreen: React.FC = () => {
   const {isBottom} = useInputBarPosition();
   const {text, updateInputText} = useInputText();
   const spellWords = text
@@ -61,9 +61,7 @@ export const Home: React.FC = () => {
     .map(char => replaceCharWithSpellWord(char as keyof CharsMap));
   const handleTextChange = (inputText: string): void =>
     updateInputText(inputText);
-  const {isDark, styles: themeStyles} = useTheme();
-
-  console.log('isDark', isDark);
+  const {styles: themeStyles} = useTheme();
 
   return (
     <SafeAreaView style={[styles.app, themeStyles.backgroundPrimary]}>

@@ -41,7 +41,7 @@ const handleGithubLinkPress = (): void => {
   Linking.openURL(githubLink);
 };
 
-export const About: React.FC = () => {
+export const AboutScreen: React.FC = () => {
   const {styles: themeStyles} = useTheme();
 
   return (

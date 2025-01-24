@@ -2,13 +2,13 @@ import * as React from 'react';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import 'react-native-gesture-handler';
 
-import {About} from './About';
-import {Home} from './Home';
+import {AboutScreen} from './About';
+import {HomeScreen} from './Home';
 import {Favourites} from './Favourites';
 
 import {colors} from '../constants/colors';
 import {HeaderPopupMenu} from '../components/HeaderPopupMenu';
-import {Settings} from './Settings';
+import {SettingsScreen} from './Settings';
 import {useTheme} from '../hooks/useTheme';
 
 const RootStack = createNativeStackNavigator();
@@ -23,7 +23,7 @@ export const RootNavigator: React.FC = () => {
     <RootStack.Navigator initialRouteName="Home">
       <RootStack.Screen
         name="Home"
-        component={Home}
+        component={HomeScreen}
         options={{
           title: 'How you spellin?',
           headerTintColor: headerTintColor,
@@ -34,8 +34,8 @@ export const RootNavigator: React.FC = () => {
         }}
       />
       <RootStack.Screen
-        name="AboutModal"
-        component={About}
+        name="About Modal"
+        component={AboutScreen}
         options={() => ({
           presentation: 'modal',
           title: 'About',
@@ -45,7 +45,7 @@ export const RootNavigator: React.FC = () => {
         })}
       />
       <RootStack.Screen
-        name="FavouritesModal"
+        name="Favourites Modal"
         component={Favourites}
         options={() => ({
           presentation: 'modal',
@@ -57,8 +57,8 @@ export const RootNavigator: React.FC = () => {
         })}
       />
       <RootStack.Screen
-        name="SettingsModal"
-        component={Settings}
+        name="Settings Modal"
+        component={SettingsScreen}
         options={() => ({
           presentation: 'modal',
           title: 'Settings',

@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
   },
 });
 
-export const Settings = () => {
+export const SettingsScreen = () => {
   const {
     isDark,
     styles: themeStyles,
@@ -80,17 +80,6 @@ export const Settings = () => {
           switchDisabled={true}
         />
       </FullWidthItemContainer>
-      <View style={styles.listCategoryTitleContainer}>
-        <Text style={[styles.text, themeStyles.textPrimary]}>
-          Favourites options
-        </Text>
-      </View>
-      <View>
-        <Text>Delete all favourites</Text>
-        <Text>Button</Text>
-
-        {/* <FavouritesList onInsertCallback={() => {}} /> */}
-      </View>
     </View>
   );
 };

@@ -4,10 +4,15 @@ import {fontSizes} from '../constants/fontSizes';
 import {colors} from '../constants/colors';
 
 const styles = StyleSheet.create({
-  container: {},
+  container: {
+    height: 30,
+    width: 30,
+  },
   text: {
     fontSize: fontSizes.xlarge,
+    lineHeight: 30,
     color: colors.lightGray,
+    textAlign: 'center',
   },
 });
 

@@ -1,6 +1,7 @@
 import * as React from 'react';
-import {Appearance, StyleSheet} from 'react-native';
+import {Appearance, Platform, Settings, StyleSheet} from 'react-native';
 import {lightColors, darkColors, ThemeColors} from '../constants/colors';
+import {settingsNames} from '../constants/settingsNames';
 
 const getStyles = (colors: ThemeColors) => {
   return StyleSheet.create({
@@ -45,14 +46,40 @@ interface ThemeProviderProps {
 export const ThemeProvider = (props: ThemeProviderProps) => {
   const colorScheme = Appearance.getColorScheme();
   const [doesUseSystemSetting, setDoesUseSystemSetting] =
-    React.useState<boolean>(true);
-  const [isDark, setIsDark] = React.useState(colorScheme === 'dark');
+    React.useState<boolean>(() =>
+      Platform.OS === 'ios'
+        ? Settings.get(settingsNames.useSystemColors) ?? true
+        : true,
+    );
+  const [isDark, setIsDark] = React.useState<boolean>(() =>
+    Platform.OS === 'ios'
+      ? Settings.get(settingsNames.darkMode)
+      : colorScheme === 'dark',
+  );
 
   React.useEffect(() => {
     if (doesUseSystemSetting) {
-      setIsDark(colorScheme === 'dark');
+      const isSchemeDark = colorScheme === 'dark';
+
+      if (Platform.OS === 'ios') {
+        Settings.set({[settingsNames.darkMode]: isSchemeDark});
+      }
+
+      setIsDark(isSchemeDark);
     }
   }, [colorScheme, doesUseSystemSetting]);
+
+  if (Platform.OS === 'ios') {
+    Settings.watchKeys(
+      [settingsNames.useSystemColors, settingsNames.darkMode],
+      () => {
+        setDoesUseSystemSetting(
+          Settings.get(settingsNames.useSystemColors) ?? false,
+        );
+        setIsDark(Settings.get(settingsNames.darkMode) ?? false);
+      },
+    );
+  }
 
   const defaultTheme = React.useMemo(() => {
     const colors = isDark ? darkColors : lightColors;
@@ -62,9 +89,21 @@ export const ThemeProvider = (props: ThemeProviderProps) => {
       isDark,
       colors,
       toggleDoesUseSystemSetting: () => {
+        if (Platform.OS === 'ios') {
+          Settings.set({
+            [settingsNames.useSystemColors]: !doesUseSystemSetting,
+          });
+        }
+
         setDoesUseSystemSetting(!doesUseSystemSetting);
       },
-      toggleScheme: () => setIsDark(!isDark),
+      toggleScheme: () => {
+        if (Platform.OS === 'ios') {
+          Settings.set({[settingsNames.darkMode]: !isDark});
+        }
+
+        setIsDark(!isDark);
+      },
       styles: getStyles(colors),
     };
   }, [isDark, doesUseSystemSetting, setDoesUseSystemSetting]);

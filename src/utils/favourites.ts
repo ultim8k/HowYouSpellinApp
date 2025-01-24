@@ -36,7 +36,7 @@ export const addFavourite = async ({
   text: string;
   name?: string;
 }): Promise<void> => {
-  const key = name || text.replace(/\s/g, '-').toLowerCase();
+  const key = name ?? text.replace(/\s/g, '-').toLowerCase();
 
   storage.set(key, text);
 };

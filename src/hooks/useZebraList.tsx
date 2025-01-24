@@ -1,4 +1,6 @@
 import * as React from 'react';
+import {Platform, Settings} from 'react-native';
+import {settingsNames} from '../constants/settingsNames';
 
 const ZebraListContext = React.createContext<{
   toggleZebraListEnabled: () => void;
@@ -17,12 +19,29 @@ interface ZebraListProviderProps {
 export const ZebraListProvider: React.FC<ZebraListProviderProps> = ({
   children,
 }) => {
-  const [isZebraListEnabled, setIsZebraListEnabled] =
-    React.useState<boolean>(false);
+  const [isZebraListEnabled, setIsZebraListEnabled] = React.useState<boolean>(
+    () =>
+      Platform.OS === 'ios'
+        ? Settings.get(settingsNames.zebraListToggle) ?? false
+        : false,
+  );
+
+  if (Platform.OS === 'ios') {
+    Settings.watchKeys([settingsNames.zebraListToggle], () => {
+      setIsZebraListEnabled(
+        Settings.get(settingsNames.zebraListToggle) ?? false,
+      );
+    });
+  }
 
   const defaultContext = React.useMemo(() => {
-    const toggleZebraListEnabled = (): void =>
+    const toggleZebraListEnabled = (): void => {
+      if (Platform.OS === 'ios') {
+        Settings.set({[settingsNames.zebraListToggle]: !isZebraListEnabled});
+      }
+
       setIsZebraListEnabled(!isZebraListEnabled);
+    };
 
     return {toggleZebraListEnabled, isZebraListEnabled};
   }, [isZebraListEnabled]);

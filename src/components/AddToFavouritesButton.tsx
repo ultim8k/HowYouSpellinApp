@@ -1,5 +1,12 @@
 import React from 'react';
-import {Alert, Pressable, StyleSheet, Text} from 'react-native';
+import {
+  Alert,
+  AlertButton,
+  Platform,
+  Pressable,
+  StyleSheet,
+  Text,
+} from 'react-native';
 
 import {colors} from '../constants/colors';
 import {addFavourite} from '../utils';
@@ -56,25 +63,34 @@ const handleAddFavouritePress = ({
   text: string;
   callback?: () => void;
 }): void => {
-  Alert.prompt(
-    'Add item to favourites',
-    'Optionally specify a different name for this item:',
-    [
-      {
-        text: 'Cancel',
-        style: 'cancel',
-      },
-      {
-        text: 'Add',
-        onPress: (name?: string) => {
-          addFavourite({name, text});
-          callback && callback();
-        },
-      },
-    ],
-    'plain-text',
-    text,
-  );
+  const promptTitle = 'Add item to favourites';
+  const promptMessage = 'Optionally specify a different name for this item:';
+  const cancelButtonOptions = {
+    text: 'Cancel',
+    style: 'cancel',
+  } as AlertButton;
+  const addButtonOptions = {
+    text: 'Add',
+    onPress: (name?: string) => {
+      addFavourite({name, text});
+      callback && callback();
+    },
+  } as AlertButton;
+
+  if (Platform.OS === 'ios') {
+    Alert.prompt(
+      promptTitle,
+      promptMessage,
+      [cancelButtonOptions, addButtonOptions],
+      'plain-text',
+      text,
+    );
+  } else {
+    Alert.alert(promptTitle, `"${text}"`, [
+      cancelButtonOptions,
+      addButtonOptions,
+    ]);
+  }
 };
 
 export const AddToFavouritesButton: React.FC<AddToFavouritesButtonProps> = ({
