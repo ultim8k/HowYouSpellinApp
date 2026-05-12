@@ -4,6 +4,9 @@ Convert text to spell words using the "International Radiotelephony Spelling Alp
 
 > Created with ❤️ using ReactNative™️
 
+![iTunes App Store](https://img.shields.io/itunes/v/1663502643?style=for-the-badge&logo=ios&logoColor=black&label=Install&link=https%3A%2F%2Fapps.apple.com%2Fgb%2Fapp%2Fhow-you-spellin%2Fid1663502643)
+
+
 ![iOS screenshot](https://user-images.githubusercontent.com/701815/207428158-04f11626-ac77-4091-bdb5-2970bf632de1.png)
 
 ## Step 1: Start the Metro Server
