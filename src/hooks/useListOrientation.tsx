@@ -13,7 +13,7 @@ export const useListOrientation = () =>
   React.useContext(ListOrientationContext);
 
 interface ListOrientationProviderProps {
-  children: JSX.Element;
+  children: React.JSX.Element;
 }
 
 export const ListOrientationProvider: React.FC<

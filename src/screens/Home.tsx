@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
-import {Appearance, SafeAreaView, StyleSheet, Text, View} from 'react-native';
+import {Appearance, StyleSheet, Text, View} from 'react-native';
+import {SafeAreaView} from 'react-native-safe-area-context';
 
 import {SpellWords} from '../components/SpellWords';
 import {InputForm} from '../components/InputForm';

@@ -20,7 +20,6 @@ const styles = StyleSheet.create({
   },
   listVertical: {
     textAlign: 'center',
-    listStyle: 'none',
     width: '100%',
     marginVertical: 0,
     marginHorizontal: 'auto',
