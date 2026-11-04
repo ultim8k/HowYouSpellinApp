@@ -1,5 +1,12 @@
 import React, {useState} from 'react';
-import {Appearance, StyleSheet, Text, View} from 'react-native';
+import {
+  Appearance,
+  KeyboardAvoidingView,
+  Platform,
+  StyleSheet,
+  Text,
+  View,
+} from 'react-native';
 import {SafeAreaView} from 'react-native-safe-area-context';
 
 import {SpellWords} from '../components/SpellWords';
@@ -12,11 +19,12 @@ import {fontSizes} from '../constants/fontSizes';
 
 const styles = StyleSheet.create({
   app: {
-    display: 'flex',
-    flexGrow: 1,
-    height: '100%',
+    flex: 1,
     width: '100%',
     maxWidth: '100%',
+  },
+  keyboardAvoiding: {
+    flex: 1,
   },
   appLight: {
     backgroundColor: colors.light,
@@ -70,8 +78,12 @@ export const Home: React.FC = () => {
           Spelling Alphabet.
         </Text>
       </View>
-      <InputForm text={text} handleTextChange={handleTextChange} />
-      <SpellWords words={spellWords} />
+      <KeyboardAvoidingView
+        style={styles.keyboardAvoiding}
+        behavior={Platform.OS === 'ios' ? 'padding' : undefined}>
+        <InputForm text={text} handleTextChange={handleTextChange} />
+        <SpellWords words={spellWords} />
+      </KeyboardAvoidingView>
     </SafeAreaView>
   );
 };

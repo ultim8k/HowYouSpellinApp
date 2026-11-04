@@ -1,13 +1,9 @@
 import * as React from 'react';
-import {StyleSheet, Text, View} from 'react-native';
+import {FlatList, ScrollView, StyleSheet, Text, View} from 'react-native';
 
 import {WordWithStrongFirstCap} from './WordWithStrongFirstCap';
 import {isBreak} from '../utils';
 import {useListOrientation} from '../hooks/useListOrientation';
-import {
-  KeyboardAwareFlatList,
-  KeyboardAwareScrollView,
-} from 'react-native-keyboard-aware-scroll-view';
 import {colors} from '../constants/colors';
 
 const styles = StyleSheet.create({
@@ -84,19 +80,19 @@ export const SpellWords = ({words}: SpellWordsProps) => {
   if (isHorizontal) {
     return (
       <View style={styles.container}>
-        <KeyboardAwareScrollView
+        <ScrollView
           contentContainerStyle={styles.contentContainer}>
           {words.map((word, index) => (
             <Item word={word} key={`${index} ${word}`} />
           ))}
-        </KeyboardAwareScrollView>
+        </ScrollView>
       </View>
     );
   }
 
   return (
     <View style={styles.container}>
-      <KeyboardAwareFlatList
+      <FlatList
         style={styles.listVertical}
         data={words}
         renderItem={renderItem}
